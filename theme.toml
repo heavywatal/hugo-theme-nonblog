@@ -1,0 +1,11 @@
+name = "nonblog"
+license = "MIT"
+licenselink = "https://github.com/heavywatal/hugo-theme-nonblog/blob/master/LICENSE"
+description = "A minimal theme for non-blog site with a hierarchical sidebar"
+tags = ["nonblog", "minimal", "responsive"]
+features = ["syntax highlighting"]
+min_version = 0.15
+
+[author]
+name = "heavywatal"
+homepage = "https://github.com/heavywatal"

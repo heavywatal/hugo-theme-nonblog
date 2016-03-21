@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333333;
+    background-color: #e8e8e8;
+    font-family: "Open Sans",  Roboto, "Hiragino Kaku Gothic ProN", "Yu Gothic", 游ゴシック, Meiryo, メイリオ, sans-serif;
+}
+
+#container {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 48px;
+}
+
+#container:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+pre, code {
+    font-family: "Ubuntu Mono", "DejaVu Sans Mono", "Menlo", "Consolas", monospace;
+}
+
+ul, ol {
+    padding-left: 1.8em;
+}
+
+a {
+    color: #1199aa;
+    text-decoration: none;
+}
+
+header h1 {
+    margin: 4px 10px;
+    padding: 6px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+img.logo {
+    vertical-align: text-bottom;
+    margin-right: 4px;
+}
+
+#sidebar {
+    width: 200px;
+    float: left;
+    background-color: #ffffff;
+    margin: 0 0 0 10px;
+    padding: 0;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease-out;
+    list-style: none;
+    max-height: 0;
+    overflow:hidden;
+}
+
+#sidebar div {
+    padding: 0;
+}
+
+#sidebar div>a {
+    padding: 10px 6px;
+}
+
+#sidebar a {
+    padding: 5px 13px;
+    color: inherit;
+    display: block;
+}
+
+#sidebar input {
+    display: none;
+}
+
+#sidebar input:checked + label + ul {
+    max-height: 800px;
+}
+
+#sidebar label {
+    display: block;
+    position: relative;
+    padding: 10px 6px;
+    font-size: 1.1rem;
+}
+
+#sidebar label:after {
+    content: "❯";
+    position: absolute;
+    right: 8px;
+    color: #cccccc;
+    transition: all 0.2s ease-out;
+}
+
+#sidebar input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+#sidebar label.active:after {
+    color: #1188bb;
+}
+
+#sidebar li {
+    background: #f8f8f8;
+}
+
+#sidebar div, #sidebar label, #sidebar li, #sidebar label.active {
+    border-bottom: 1px solid #cccccc;
+}
+
+#sidebar .active {
+    font-weight: bold;
+    color: #1199aa;
+    border-color: #1199aa;
+}
+
+#sidebar label:hover, #sidebar a:hover {
+    cursor: pointer;
+    color: #1199aa;
+    background-color: #f6ffff;
+}
+
+#TableOfContents {
+    font-size: 0.93rem;
+    max-width: 80%;
+    border: solid 1px #999999;
+    margin: 20px 20px 20px auto;
+}
+
+#TableOfContents:before {
+    content: "Table of Contents";
+    margin: 6px;
+    padding: 6px;
+}
+
+#TableOfContents> ul {
+    margin: 8px;
+    padding: 0;
+    list-style-type: none;
+}
+
+#TableOfContents>ul>li>ul>li>ul {display: none;}
+
+main {
+    background-color: #ffffff;
+    float: right;
+    margin: 0 10px 0 0;
+    width: calc(100% - 230px);
+    padding: 20px 20px 20px 20px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+header a {
+    color: inherit;
+}
+
+article header h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0 0 4px 0;
+    margin: 0;
+}
+
+article header+h2 {
+    margin-top: 18px;
+}
+
+article h2 {
+    font-size: 1.4rem;
+    background-color: #e8e8e8;
+    border-left: solid 6px #cccccc;
+    margin: 32px 0 12px -12px;
+    padding: 6px 6px;
+    font-weight: normal;
+}
+
+article h3 {
+    font-size: 1.2rem;
+    border-bottom: solid 2px #cccccc;
+    margin-left: -10px;
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+code {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 2px 4px;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+}
+
+code.has-jax {
+    font: inherit;
+    background: inherit;
+    border: inherit;
+}
+
+pre {
+    background-color: #f7f7f7;
+    padding: 8px;
+    margin: -4px 0px 20px;
+}
+
+dl dt {
+    font-weight: bold;
+    padding: 2px 0 0 0;
+}
+
+dl dd {
+    margin: 0 0 4px 1.5em;
+}
+
+dd p {
+    margin-top: 6px;
+}
+
+blockquote {
+    margin: 8px 16px;
+    padding: 4px 12px 1px;
+    border-left: solid 4px #cccccc;
+    position: relative;
+    z-index: 1;
+}
+
+blockquote:before {
+    content: "“";
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    font-size: 2.4rem;
+    font-family: serif;
+    color: #999999;
+    z-index: 2;
+}
+
+.warning, .note {
+    display: block;
+    margin: 8px 0px;
+    padding: 10px 10px 10px 40px;
+    background-color: #eeeeee;
+    position: relative;
+}
+
+.warning:before, .note:before {
+    font-family: "Ubuntu mono", monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10%;
+    width: 24px;
+    line-height: 24px;
+}
+
+.warning {
+    background-color: #ffeeee;
+}
+
+.warning:before {
+    content: "!";
+    color: #cc3333;
+}
+
+.note {
+    background-color: #eeeeff;
+}
+
+.note:before {
+    content: "i";
+    color: #336699;
+}
+
+aside {
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+aside h1 {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #999999;
+    margin: 0;
+    padding: 12px;
+}
+
+aside label:hover {
+    cursor: pointer;
+}
+
+#pagesource {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    display: none;
+    overflow: scroll;
+    padding: 10px;
+    background-color: #ffffff;
+    border: solid 30px rgba(0,0,0,0.3);
+}
+
+input[type="checkbox"]:checked + #pagesource {
+    display: block;
+}
+
+#inputsource {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #999999;
+    padding: 12px;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 650px) {
+  nav {
+    width: 100%;
+    margin: 10px 0;
+  }
+  main {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media print {
+  body {font-size: 0.8rem;}
+  nav {display: none;}
+  main {
+    margin: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+}

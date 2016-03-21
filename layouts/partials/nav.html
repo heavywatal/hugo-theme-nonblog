@@ -1,0 +1,11 @@
+{{ $node := . }}
+<nav id="sidebar">{{ range .Site.Menus.main }}
+{{ if .HasChildren }}
+<input type="checkbox" id="{{ .Name }}"{{if or ($node.IsMenuCurrent "main" .) ($node.HasMenuCurrent "main" .) }} checked{{end}}>
+<label for="{{ .Name }}"{{if $node.HasMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</label>
+<ul>{{ range .Children }}
+<li{{if $node.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
+</ul>{{ else }}
+<div {{if $node.IsMenuCurrent "main" . }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></div>
+{{ end }}{{ end }}
+</nav>

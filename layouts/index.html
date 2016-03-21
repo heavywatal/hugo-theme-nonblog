@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+<main>
+{{ range .Site.Menus.main }}
+<strong>{{ .Name }}</strong>
+<ul>{{ range .Children }}
+<li><a href="{{.URL}}">{{ .Name }}</a>{{ end }}
+</ul>
+{{ end }}
+</main>
+{{ partial "nav.html" . }}
+{{ partial "footer.html" . }}
