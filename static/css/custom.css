@@ -54,7 +54,7 @@ img.logo {
     margin-right: 4px;
 }
 
-#sidebar {
+#menu {
     width: 200px;
     float: left;
     background-color: #ffffff;
@@ -63,7 +63,7 @@ img.logo {
     box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
 }
 
-#sidebar ul {
+#menu ul {
     margin: 0;
     padding: 0;
     transition: all 0.2s ease-out;
@@ -72,36 +72,36 @@ img.logo {
     overflow:hidden;
 }
 
-#sidebar div {
+#menu div {
     padding: 0;
 }
 
-#sidebar div>a {
+#menu div>a {
     padding: 10px 6px;
 }
 
-#sidebar a {
+#menu a {
     padding: 5px 13px;
     color: inherit;
     display: block;
 }
 
-#sidebar input {
+#menu input {
     display: none;
 }
 
-#sidebar input:checked + label + ul {
+#menu input:checked + label + ul {
     max-height: 800px;
 }
 
-#sidebar label {
+#menu label {
     display: block;
     position: relative;
     padding: 10px 6px;
     font-size: 1.1rem;
 }
 
-#sidebar label:after {
+#menu label:after {
     content: "❯";
     position: absolute;
     right: 8px;
@@ -109,29 +109,29 @@ img.logo {
     transition: all 0.2s ease-out;
 }
 
-#sidebar input:checked + label:after {
+#menu input:checked + label:after {
     transform: rotate(90deg);
 }
 
-#sidebar label.active:after {
+#menu label.active:after {
     color: #1188bb;
 }
 
-#sidebar li {
+#menu li {
     background: #f8f8f8;
 }
 
-#sidebar div, #sidebar label, #sidebar li, #sidebar label.active {
+#menu div, #menu label, #menu li, #menu label.active {
     border-bottom: 1px solid #cccccc;
 }
 
-#sidebar .active {
+#menu .active {
     font-weight: bold;
     color: #1199aa;
     border-color: #1199aa;
 }
 
-#sidebar label:hover, #sidebar a:hover {
+#menu label:hover, #menu a:hover {
     cursor: pointer;
     color: #1199aa;
     background-color: #f6ffff;
@@ -392,7 +392,7 @@ footer {
 }
 
 @media (max-width: 650px) {
-  nav {
+  #menu {
     width: 100%;
     margin: 10px 0;
   }

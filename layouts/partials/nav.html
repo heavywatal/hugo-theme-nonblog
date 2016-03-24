@@ -1,5 +1,5 @@
 {{ $node := . }}
-<nav id="sidebar">{{ range .Site.Menus.main }}
+<nav id="menu">{{ range .Site.Menus.main }}
 {{ if .HasChildren }}
 <input type="checkbox" id="{{ .Name }}"{{if or $node.IsHome ($node.HasMenuCurrent "main" .) }} checked{{end}}>
 <label for="{{ .Name }}"{{if $node.HasMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</label>
