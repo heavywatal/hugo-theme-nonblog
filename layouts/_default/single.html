@@ -2,7 +2,7 @@
 <main>
 <article>
 <header><h1>
-<a href="{{ .URL }}">{{ .Title }}</a>
+<a href="{{ .URL }}">{{ .Title }}{{ with .Params.subtitle }} — {{ . }}{{ end }}</a>
 </h1>
 <ul id="tags">{{ range .Params.tags }}
 <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>{{ end }}
