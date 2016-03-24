@@ -3,7 +3,11 @@
 <article>
 <header><h1>
 <a href="{{ .URL }}">{{ .Title }}</a>
-</h1></header>
+</h1>
+<ul id="tags">{{ range .Params.tags }}
+<li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>{{ end }}
+</ul>
+</header>
 {{ if .Params.toc }}{{ .TableOfContents }}{{ end }}
 {{ .Content }}
 </article>

@@ -1,11 +1,16 @@
 {{ partial "header.html" . }}
 <main>
+<article>
 <header><h1>
 <a href="{{ .URL }}" class="title">{{ .Title }}</a>
 </h1></header>
-<ul>{{ range $key, $value := .Data.Terms }}
-<li><a href="/{{ $.Data.Plural }}/{{ $key }}">{{ $key }}</a> {{ $value.Count }}{{ end }}
-</ul>
+<dl id="terms">{{ range $key, $weighted_pages := .Data.Terms }}
+<dt><a href="/{{ $.Data.Plural }}/{{ $key }}">{{ $key }}</a></dt>
+<dd><ul>{{ range $page := $weighted_pages.Pages }}
+  <li><a href="{{ .RelPermalink }}">{{ $page.Title }}</a></li>{{ end }}
+</ul><dd>
+{{ end }}</dl>
+</article>
 </main>
 {{ partial "nav.html" . }}
 {{ partial "footer.html" . }}

@@ -167,17 +167,45 @@ main {
     box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
 }
 
-header a {
+header a, h2 a, #terms dt a {
     color: inherit;
 }
 
 article header h1 {
+    display: inline-block;
+    vertical-align: baseline;
     font-size: 1.4rem;
     font-weight: bold;
     background: none;
     border: none;
     padding: 0 0 4px 0;
     margin: 0;
+}
+
+#tags {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0;
+}
+
+#tags li, #terms dt {
+    display: inline-block;
+    padding: 3px 4px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: #bbbbbb;
+}
+
+#terms ul {
+    margin: 0 0 3ex 0;
+    padding: 0;
+}
+
+#terms li {
+    display: inline-block;
+    margin: 0 10px;
 }
 
 article header+h2 {
@@ -201,7 +229,7 @@ article h3 {
     font-weight: normal;
 }
 
-article a:hover {
+main a:hover {
     text-decoration: underline;
 }
 

@@ -1,6 +1,6 @@
 +++
-tags = []
+tags = ["0"]
 [menu]
   [menu.main]
-    parent = ""
+    parent = "inbox"
 +++

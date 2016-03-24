@@ -1,11 +1,17 @@
 {{ partial "header.html" . }}
 <main>
-{{ range .Site.Menus.main }}
-<strong>{{ .Name }}</strong>
-<ul>{{ range .Children }}
-<li><a href="{{.URL}}">{{ .Name }}</a>{{ end }}
-</ul>
+<article>
+<header><h1>Index</h1></header>
+{{ range $taxon, $terms := .Site.Taxonomies }}
+<h2><a href="/{{ $taxon }}">{{ $taxon }}</a></h2>
+<dl id="terms">{{ range $tag, $pages := $terms }}
+  <dt>{{ $tag }}</dt>
+  <dd><ul>{{ range $pages }}
+  <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>{{ end }}
+  </ul></dd>{{ end }}
+</dl>
 {{ end }}
+</article>
 </main>
 {{ partial "nav.html" . }}
 {{ partial "footer.html" . }}
