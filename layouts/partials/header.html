@@ -10,23 +10,7 @@
 <link rel="icon" href="{{ .Site.BaseURL }}favicon-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}favicon-192x192.png" sizes="192x192">
 <title>{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$']],
-    displayMath: [['$$','$$']],
-    processEnvironments: false,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-  }
-});
-MathJax.Hub.Queue(function() {
-  var all = MathJax.Hub.getAllJax(), i;
-  for(i = 0; i < all.length; i += 1) {
-    all[i].SourceElement().parentNode.className += ' has-jax';
-  }
-});
-</script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+{{ if .IsPage }}{{ partial "mathjax.html" . }}{{ end }}
 </head>
 <body><div id="container">
 <header><h1><a href="{{ .Site.BaseURL }}">
