@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 {{ .Hugo.Generator }}
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/custom.css">
-<link rel="stylesheet" href="/css/highlight.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.css">
 <title>{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
 </head>
 <body><div id="container">
-<header><h1><a href="/">
-{{ with .Site.Params.logo_src }}<img class="logo" src="{{ . }}" alt="{{ $.Site.Params.logo_alt }}">{{ end }}
+<header><h1><a href="{{ .Site.BaseURL }}">
+{{ with .Site.Params.logo_src }}<img class="logo" src="{{ $.Site.BaseURL }}{{ . }}" alt="{{ $.Site.Params.logo_alt }}">{{ end }}
 {{ .Site.Title }}
 </a></h1>
 </header>
