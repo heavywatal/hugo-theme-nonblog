@@ -1,3 +1,17 @@
+{{ partial "nav.html" . }}
+
+{{ if and .IsPage .Site.Params.page_source }}<aside>
+<h1><label for="inputsource">Page source</label></h1>
+<input type="checkbox" id="inputsource">
+<pre id="pagesource"><code class="language-markdown">
++++
+title = "{{ .Title }}"
++++
+
+{{ .RawContent }}
+</code></pre>
+</aside>{{ end }}
+
 <footer>{{ .Site.Params.copyrights }}</footer>
 </div><!-- #container -->
 

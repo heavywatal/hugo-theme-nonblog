@@ -12,16 +12,4 @@
 {{ .Content }}
 </article>
 </main>
-{{ partial "nav.html" . }}
-{{ if .Site.Params.page_source }}<aside>
-<h1><label for="inputsource">Page source</label></h1>
-<input type="checkbox" id="inputsource">
-<pre id="pagesource"><code class="language-markdown">
-+++
-title = "{{ .Title }}"
-+++
-
-{{ .RawContent }}
-</code></pre>
-</aside>{{ end }}
 {{ partial "footer.html" . }}
