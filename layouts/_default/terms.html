@@ -1,9 +1,9 @@
 {{ partial "header.html" . }}
 <main>
 <article>
-<header><h1>
-<a href="{{ .URL }}" class="title">{{ .Title }}</a>
-</h1></header>
+<header><h1><a href="{{ .URL }}">
+{{ .Title }}
+</a></h1></header>
 <dl id="terms">{{ range $key, $weighted_pages := .Data.Terms }}
 <dt><a href="/{{ $.Data.Plural }}/{{ $key }}">{{ $key }}</a></dt>
 <dd><ul>{{ range $page := $weighted_pages.Pages }}

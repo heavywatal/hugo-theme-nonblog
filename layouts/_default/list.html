@@ -2,7 +2,7 @@
 <main>
 <article>
 <header>{{ with .Data.Plural }}<a href="/{{.}}">{{.}}</a> / {{ end }}<h1>
-<a href="{{ .URL }}" class="title">{{ .Title }}</a>
+<a href="{{ .URL }}">{{ .Title }}</a>
 </h1></header>
 <ul>{{ range .Data.Pages }}
 <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
