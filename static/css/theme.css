@@ -50,6 +50,7 @@ header h1 {
 }
 
 img.logo {
+    height: 32px;
     vertical-align: text-bottom;
     margin-right: 4px;
 }
