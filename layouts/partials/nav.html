@@ -1,8 +1,8 @@
 {{ $node := . }}
 <nav id="menu">{{ range .Site.Menus.main }}
 {{ if .HasChildren }}
-<input type="checkbox" id="{{ .Name }}"{{ if or $node.IsHome ($node.HasMenuCurrent "main" .) }} checked{{ end }}>
-<label for="{{ .Name }}"{{ if $node.HasMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</label>
+<input type="checkbox" id="{{ .Identifier }}"{{ if $node.HasMenuCurrent "main" . }} checked{{ end }}>
+<label for="{{ .Identifier }}"{{ if $node.HasMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</label>
 <ul>{{ range .Children }}
 <li{{ if $node.IsMenuCurrent "main" . }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
 </ul>{{ else }}
