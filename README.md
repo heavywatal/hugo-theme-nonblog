@@ -8,12 +8,13 @@ This is a minimal theme for non-blog websites with a hierarchical sidebar
 
 ```toml
 +++
-baseURL = "/"
+baseURL = "https://heavywatal.github.io/"
 theme = "nonblog"
 googleAnalytics = "UA-***"
 
 [params]
-logo_src = "favicon-32x32.png"
+base_path = "/"
+logo_src = "favicon-192x192.png"
 logo_alt = "航"
 copyrights = "(ɔ) 2008 Watal M. Iwasaki"
 page_source = false

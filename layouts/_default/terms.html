@@ -5,7 +5,7 @@
 {{ .Title }}
 </a></h1></header>
 <dl id="terms">{{ range $key, $weighted_pages := .Data.Terms }}
-<dt><a href="/{{ $.Data.Plural }}/{{ $key }}">{{ $key }}</a></dt>
+<dt><a href="{{ $.Site.Params.base_path }}{{ $.Data.Plural }}/{{ $key }}">{{ $key }}</a></dt>
 <dd><ul>{{ range $page := $weighted_pages.Pages }}
   <li><a href="{{ .RelPermalink }}">{{ $page.Title }}</a></li>{{ end }}
 </ul><dd>

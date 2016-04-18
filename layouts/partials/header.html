@@ -5,11 +5,11 @@
 {{ .Hugo.Generator }}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Ubuntu+Mono:400,400italic,700,700italic">
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/theme.css">
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.css">
-<link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico">
-<link rel="icon" href="{{ .Site.BaseURL }}favicon-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="{{ .Site.BaseURL }}favicon-192x192.png" sizes="192x192">
+<link rel="stylesheet" href="{{ .Site.Params.base_path }}css/theme.css">
+<link rel="stylesheet" href="{{ .Site.Params.base_path }}css/highlight.css">
+<link rel="shortcut icon" href="{{ .Site.Params.base_path }}favicon.ico">
+<link rel="icon" href="{{ .Site.Params.base_path }}favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="{{ .Site.Params.base_path }}favicon-192x192.png" sizes="192x192">
 <title>{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
 {{ if .IsPage }}{{ partial "mathjax.html" . }}{{ end }}
 {{ with .Site.GoogleAnalytics }}<script>
@@ -22,8 +22,8 @@ ga('send', 'pageview');
 </script>{{ end }}
 </head>
 <body><div id="container">
-<header><h1><a href="{{ .Site.BaseURL }}">
-{{ with .Site.Params.logo_src }}<img class="logo" src="{{ $.Site.BaseURL }}{{ . }}" alt="{{ $.Site.Params.logo_alt }}">{{ end }}
+<header><h1><a href="{{ .Site.Params.base_path }}">
+{{ with .Site.Params.logo_src }}<img class="logo" src="{{ $.Site.Params.base_path }}{{ . }}" alt="{{ $.Site.Params.logo_alt }}">{{ end }}
 {{ .Site.Title }}
 </a></h1>
 </header>
