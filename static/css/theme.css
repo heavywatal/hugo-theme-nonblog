@@ -14,7 +14,7 @@ html, body {
 body {
     color: #333333;
     background-color: #e8e8e8;
-    font-family: "Open Sans", Roboto, "Hiragino Kaku Gothic ProN", "Yu Gothic", 游ゴシック, Meiryo, メイリオ, sans-serif;
+    font-family: "Open Sans", Roboto, "Hiragino Kaku Gothic ProN", "Yu Gothic", "游ゴシック", Meiryo, "メイリオ", sans-serif;
 }
 
 #container {
