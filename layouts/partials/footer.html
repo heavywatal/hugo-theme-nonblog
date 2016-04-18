@@ -17,7 +17,7 @@ title = "{{ .Title }}"
 
 <script src="{{ .Site.BaseURL }}js/highlight.pack.js"></script>
 <script>{{ with .Site.Params.highlightjs_languages}}
-hljs.configure({languages: {{.}}});{{ end }}
+hljs.configure({languages: {{ . }}});{{ end }}
 hljs.initHighlightingOnLoad();
 </script>
 </body>
