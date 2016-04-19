@@ -1,16 +1,13 @@
 {{ partial "header.html" . }}
 <main>
+{{ range where .Data.Pages "Type" "home" }}
 <article>
-<header><h1>Index</h1></header>
-{{ range $taxon, $terms := .Site.Taxonomies }}
-<h2><a href="/{{ $taxon }}">{{ $taxon }}</a></h2>
-<dl id="terms">{{ range $tag, $pages := $terms }}
-  <dt>{{ $tag }}</dt>
-  <dd><ul>{{ range $pages }}
-  <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>{{ end }}
-  </ul></dd>{{ end }}
-</dl>
-{{ end }}
+<header><h1><a href="{{ .URL }}">
+{{ .Title }}
+</a></h1></header>
+{{ .Summary }}
+<a href="{{ .RelPermalink }}" rel="next" class="readmore">Read More</a>
 </article>
+{{ end }}
 </main>
 {{ partial "footer.html" . }}

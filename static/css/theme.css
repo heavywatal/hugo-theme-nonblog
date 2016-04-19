@@ -44,6 +44,27 @@ a {
     text-decoration: none;
 }
 
+a.readmore {
+    padding: 3px 30px 3px 20px;
+    border-radius: 4px;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: #bbbbbb;
+    position: relative;
+}
+
+a.readmore:hover {
+    background-color: #1199aa;
+    text-decoration: none;
+}
+
+a.readmore:after {
+    content: "❯";
+    position: absolute;
+    right: 8px;
+    color: #ffffff;
+}
+
 header h1 {
     margin: 4px 10px;
     padding: 6px;
