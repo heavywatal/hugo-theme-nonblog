@@ -20,6 +20,8 @@ body {
 #container {
     position: relative;
     min-height: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
     padding-bottom: 48px;
 }
 
@@ -59,7 +61,7 @@ img.logo {
     width: 200px;
     float: left;
     background-color: #ffffff;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 12px;
     padding: 0;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
 }
@@ -115,7 +117,7 @@ img.logo {
 }
 
 #menu label.active:after {
-    color: #1188bb;
+    color: #1199aa;
 }
 
 #menu li {
@@ -162,8 +164,8 @@ img.logo {
 main {
     background-color: #ffffff;
     float: right;
-    margin: 0 10px 0 0;
-    width: calc(100% - 230px);
+    margin: 0 12px 0 0;
+    width: calc(100% - 240px);
     padding: 20px 20px 20px 20px;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
 }
