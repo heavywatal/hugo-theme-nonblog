@@ -6,6 +6,6 @@
 <ul>{{ range .Children }}
 <li{{ if $node.IsMenuCurrent "main" . }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
 </ul>{{ else }}
-<div {{ if $node.IsMenuCurrent "main" . }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></div>
+<div{{ if $node.IsMenuCurrent "main" . }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></div>
 {{ end }}{{ end }}
 </nav>
