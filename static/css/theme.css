@@ -70,7 +70,7 @@ img.logo {
     transition: all 0.2s ease-out;
     list-style: none;
     max-height: 0;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 #menu div {
@@ -255,6 +255,7 @@ pre {
     padding: 8px;
     margin: -4px 0px 20px;
     line-height: 1.3;
+    overflow-x: auto;
 }
 
 dl dt {
