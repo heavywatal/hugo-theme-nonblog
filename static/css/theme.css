@@ -12,8 +12,8 @@ html, body {
 }
 
 body {
-    color: #333333;
-    background-color: #e8e8e8;
+    color: #444444;
+    background-color: #e0e0e0;
     font-family: "Open Sans", Roboto, "Hiragino Kaku Gothic ProN", "Yu Gothic", "游ゴシック", Meiryo, "メイリオ", sans-serif;
 }
 
@@ -84,7 +84,7 @@ img.logo {
     background-color: #ffffff;
     margin: 0 0 0 12px;
     padding: 0;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
 }
 
 #menu ul {
@@ -142,7 +142,7 @@ img.logo {
 }
 
 #menu li {
-    background: #f8f8f8;
+    background: #f4f4f4;
 }
 
 #menu div, #menu label, #menu li, #menu label.active {
@@ -188,7 +188,7 @@ main {
     margin: 0 12px 0 0;
     width: calc(100% - 240px);
     padding: 20px 20px 20px 20px;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
 }
 
 header a, h2 a, #terms dt a {
