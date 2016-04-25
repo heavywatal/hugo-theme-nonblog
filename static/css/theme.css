@@ -1,5 +1,9 @@
 @charset "UTF-8";
-/*csslint box-sizing: false, universal-selector: false */
+/*csslint
+  box-model: false, box-sizing: false,
+  universal-selector: false, font-sizes: false,
+  qualified-headings: false, unique-headings: false,
+*/
 
 * {
     box-sizing: border-box;
@@ -33,7 +37,7 @@ body {
 }
 
 ul, ol {
-    padding-left: 1.8em;
+    padding-left: 1.8rem;
 }
 
 a {
@@ -69,7 +73,7 @@ header h1 {
     font-weight: normal;
 }
 
-img.logo {
+.logo {
     height: 32px;
     vertical-align: text-bottom;
     margin-right: 4px;
@@ -159,7 +163,6 @@ img.logo {
 }
 
 #TableOfContents {
-    font-size: 0.93rem;
     max-width: 80%;
     border: solid 1px #999999;
     margin: 20px 20px 20px auto;
@@ -193,8 +196,8 @@ header a, h2 a, .terms dt a {
 }
 
 article header h1 {
-    display: inline-block;
-    vertical-align: baseline;
+    display: inline;
+    vertical-align: middle;
     font-size: 1.4rem;
     font-weight: bold;
     background: none;
@@ -204,8 +207,8 @@ article header h1 {
 }
 
 .tags {
-    display: inline-block;
-    vertical-align: baseline;
+    display: inline;
+    vertical-align: middle;
     margin: 0;
 }
 
@@ -261,12 +264,13 @@ pre, code {
 pre {
     background-color: #f7f7f7;
     padding: 8px;
-    margin: -4px 0px 20px;
+    margin: -4px 0 20px;
     line-height: 1.3;
     overflow-x: auto;
 }
 
 code {
+    background-color: #f7f7f7;
     background-color: rgba(0, 0, 0, 0.05);
     padding: 2px 4px;
 }
@@ -283,7 +287,7 @@ code.has-jax {
 }
 
 .gist-it-gist {
-    font-size: 0.85em;
+    font-size: 0.85rem;
 }
 
 dl dt {
@@ -292,7 +296,7 @@ dl dt {
 }
 
 dl dd {
-    margin: 0 0 4px 1.5em;
+    margin: 0 0 4px 1.5rem;
 }
 
 dd p {
@@ -333,7 +337,7 @@ blockquote:before {
 
 .warning, .note {
     display: block;
-    margin: 8px 0px;
+    margin: 8px 0;
     padding: 6px 10px 6px 40px;
     background-color: #eeeeee;
     position: relative;
@@ -405,7 +409,10 @@ aside label:hover {
     overflow: scroll;
     padding: 10px;
     background-color: #ffffff;
-    border: solid 30px rgba(0,0,0,0.3);
+    border-width: 30px;
+    border-style: solid;
+    border-color: #cccccc;
+    border-color: rgba(0,0,0,0.3);
 }
 
 input[type="checkbox"]:checked + .pagesource {
