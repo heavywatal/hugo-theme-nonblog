@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*csslint box-sizing: false, universal-selector: false */
 
 * {
     box-sizing: border-box;
@@ -29,10 +30,6 @@ body {
     display: block;
     content: "";
     clear: both;
-}
-
-pre, code {
-    font-family: "Ubuntu Mono", "DejaVu Sans Mono", "Menlo", "Consolas", monospace;
 }
 
 ul, ol {
@@ -257,6 +254,18 @@ main a:hover {
     text-decoration: underline;
 }
 
+pre, code {
+    font-family: "Ubuntu Mono", "DejaVu Sans Mono", "Menlo", "Consolas", monospace;
+}
+
+pre {
+    background-color: #f7f7f7;
+    padding: 8px;
+    margin: -4px 0px 20px;
+    line-height: 1.3;
+    overflow-x: auto;
+}
+
 code {
     background-color: rgba(0, 0, 0, 0.05);
     padding: 2px 4px;
@@ -273,12 +282,8 @@ code.has-jax {
     font-size: 112%;
 }
 
-pre {
-    background-color: #f7f7f7;
-    padding: 8px;
-    margin: -4px 0px 20px;
-    line-height: 1.3;
-    overflow-x: auto;
+.gist-it-gist {
+    font-size: 0.85em;
 }
 
 dl dt {
