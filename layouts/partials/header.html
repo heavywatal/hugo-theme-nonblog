@@ -21,7 +21,7 @@ ga('create', '{{ . }}', 'auto');
 ga('send', 'pageview');
 </script>{{ end }}
 </head>
-<body><div id="container">
+<body><div class="container">
 <header><h1><a href="{{ .Site.Params.base_path }}">
 {{ with .Site.Params.logo_src }}<img class="logo" src="{{ $.Site.Params.base_path }}{{ . }}" alt="{{ $.Site.Params.logo_alt }}">{{ end }}
 {{ .Site.Title }}

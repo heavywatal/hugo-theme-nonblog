@@ -18,7 +18,7 @@ body {
     font-family: "Open Sans", Roboto, "Hiragino Kaku Gothic ProN", "Yu Gothic", "游ゴシック", Meiryo, "メイリオ", sans-serif;
 }
 
-#container {
+.container {
     position: relative;
     min-height: 100%;
     max-width: 1080px;
@@ -26,7 +26,7 @@ body {
     padding-bottom: 48px;
 }
 
-#container:after {
+.container:after {
     display: block;
     content: "";
     clear: both;
@@ -75,7 +75,7 @@ img.logo {
     margin-right: 4px;
 }
 
-#menu {
+.menu {
     width: 200px;
     float: left;
     background-color: #ffffff;
@@ -84,7 +84,7 @@ img.logo {
     box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
 }
 
-#menu ul {
+.menu ul {
     margin: 0;
     padding: 0;
     transition: all 0.2s ease-out;
@@ -93,36 +93,36 @@ img.logo {
     overflow: hidden;
 }
 
-#menu div {
+.menu div {
     padding: 0;
 }
 
-#menu div>a {
+.menu div>a {
     padding: 10px 6px;
 }
 
-#menu a {
+.menu a {
     padding: 5px 13px;
     color: inherit;
     display: block;
 }
 
-#menu input {
+.menu input {
     display: none;
 }
 
-#menu input:checked + label + ul {
+.menu input:checked + label + ul {
     max-height: 800px;
 }
 
-#menu label {
+.menu label {
     display: block;
     position: relative;
     padding: 10px 6px;
     font-size: 1.1rem;
 }
 
-#menu label:after {
+.menu label:after {
     content: "❯";
     position: absolute;
     right: 8px;
@@ -130,29 +130,29 @@ img.logo {
     transition: all 0.2s ease-out;
 }
 
-#menu input:checked + label:after {
+.menu input:checked + label:after {
     transform: rotate(90deg);
 }
 
-#menu label.active:after {
+.menu label.active:after {
     color: #1199aa;
 }
 
-#menu li {
+.menu li {
     background: #f4f4f4;
 }
 
-#menu div, #menu label, #menu li, #menu label.active {
+.menu div, .menu label, .menu li, .menu label.active {
     border-bottom: 1px solid #cccccc;
 }
 
-#menu .active {
+.menu .active {
     font-weight: bold;
     color: #1199aa;
     border-color: #1199aa;
 }
 
-#menu label:hover, #menu a:hover {
+.menu label:hover, .menu a:hover {
     cursor: pointer;
     color: #1199aa;
     background-color: #f6ffff;
@@ -188,7 +188,7 @@ main {
     box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
 }
 
-header a, h2 a, #terms dt a {
+header a, h2 a, .terms dt a {
     color: inherit;
 }
 
@@ -203,13 +203,13 @@ article header h1 {
     margin: 0;
 }
 
-#tags {
+.tags {
     display: inline-block;
     vertical-align: baseline;
     margin: 0;
 }
 
-#tags li, #terms dt {
+.tags li, .terms dt {
     display: inline-block;
     padding: 3px 4px;
     border-radius: 4px;
@@ -219,12 +219,12 @@ article header h1 {
     background-color: #bbbbbb;
 }
 
-#terms ul {
+.terms ul {
     margin: 0 0 3ex 0;
     padding: 0;
 }
 
-#terms li {
+.terms li {
     display: inline-block;
     margin: 0 10px;
 }
@@ -395,7 +395,7 @@ aside label:hover {
     cursor: pointer;
 }
 
-#pagesource {
+.pagesource {
     position: fixed;
     top: 5%;
     left: 5%;
@@ -408,11 +408,11 @@ aside label:hover {
     border: solid 30px rgba(0,0,0,0.3);
 }
 
-input[type="checkbox"]:checked + #pagesource {
+input[type="checkbox"]:checked + .pagesource {
     display: block;
 }
 
-#inputsource {
+.inputsource {
     display: none;
 }
 
@@ -427,7 +427,7 @@ footer {
 }
 
 @media (max-width: 650px) {
-  #menu {
+  .menu {
     width: 100%;
     margin: 10px 0;
   }
