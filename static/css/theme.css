@@ -20,6 +20,7 @@ body {
     color: #444444;
     background-color: #e0e0e0;
     font-family: "Open Sans", Roboto, "Hiragino Kaku Gothic ProN", "Yu Gothic", "游ゴシック", Meiryo, "メイリオ", sans-serif;
+    padding: 0 16px;
 }
 
 .container {
@@ -67,7 +68,7 @@ a.readmore:after {
 }
 
 header h1 {
-    margin: 4px 10px;
+    margin: 4px 0;
     padding: 6px;
     font-size: 1.2rem;
     font-weight: normal;
@@ -83,7 +84,6 @@ header h1 {
     width: 200px;
     float: left;
     background-color: #ffffff;
-    margin: 0 0 0 12px;
     padding: 0;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
 }
@@ -185,8 +185,7 @@ header h1 {
 main {
     background-color: #ffffff;
     float: right;
-    margin: 0 12px 0 0;
-    width: calc(100% - 240px);
+    width: calc(100% - 216px);
     padding: 20px 20px 20px 20px;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
 }
@@ -203,13 +202,11 @@ article header h1 {
     background: none;
     border: none;
     padding: 0 0 4px 0;
-    margin: 0;
 }
 
 .tags {
     display: inline;
     vertical-align: middle;
-    margin: 0;
 }
 
 .tags li, .terms dt {
@@ -434,12 +431,14 @@ footer {
 }
 
 @media (max-width: 650px) {
+  body {
+    padding: 0;
+  }
   .menu {
     width: 100%;
-    margin: 10px 0;
+    margin: 12px 0;
   }
   main {
-    margin: 0;
     width: 100%;
   }
 }
