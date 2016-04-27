@@ -236,17 +236,15 @@ article header+h2 {
 article h2 {
     font-size: 1.4rem;
     background-color: #e8e8e8;
-    border-left: solid 6px #cccccc;
-    margin: 32px 0 12px -12px;
-    padding: 6px 6px;
+    border-left: solid 8px #aaaaaa;
+    margin: 32px 0 12px 0;
+    padding: 6px 8px;
     font-weight: normal;
 }
 
 article h3 {
     font-size: 1.2rem;
     border-bottom: solid 2px #cccccc;
-    margin-left: -10px;
-    padding-left: 10px;
     font-weight: normal;
 }
 
