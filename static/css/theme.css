@@ -103,6 +103,7 @@ header h1 {
 
 .menu div>a {
     padding: 10px 6px;
+    font-size: 1.1rem;
 }
 
 .menu a {
@@ -211,7 +212,7 @@ article header h1 {
 
 .tags li, .terms dt {
     display: inline-block;
-    padding: 3px 4px;
+    padding: 3px 5px;
     border-radius: 4px;
     font-size: 0.8rem;
     font-weight: normal;
