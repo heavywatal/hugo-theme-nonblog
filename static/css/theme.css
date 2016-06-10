@@ -276,12 +276,6 @@ pre code {
     padding: 0;
 }
 
-code.has-jax {
-    background: inherit;
-    padding: 0;
-    font-size: 112%;
-}
-
 .gist-it-gist {
     font-size: 0.85rem;
 }
