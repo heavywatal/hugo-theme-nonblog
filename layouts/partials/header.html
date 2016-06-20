@@ -13,7 +13,7 @@
 <link rel="apple-touch-icon" href="{{ .Site.Params.base_path }}favicon-192x192.png" sizes="192x192">
 <title>{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
 {{ if .IsPage }}{{ partial "mathjax.html" . }}{{ end }}
-{{ template "_internal/google_analytics_async.html" . }}
+{{ template "_internal/google_analytics.html" . }}
 </head>
 <body><div class="container">
 <header><h1><a href="{{ .Site.Params.base_path }}">
