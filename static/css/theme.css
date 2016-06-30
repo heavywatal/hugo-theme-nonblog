@@ -253,7 +253,7 @@ main a:hover {
     text-decoration: underline;
 }
 
-pre, code {
+pre, code, kbd {
     font-family: "Ubuntu Mono", "DejaVu Sans Mono", "Menlo", "Consolas", monospace;
 }
 
@@ -274,6 +274,14 @@ code {
 pre code {
     background: none;
     padding: 0;
+}
+
+kbd {
+    font-size: 0.92rem;
+    padding: 2px 4px 1px;
+    box-shadow: 1px 1px 1px #808080;
+    border: solid 1px #cccccc;
+    border-radius: 3px;
 }
 
 .gist-it-gist {
