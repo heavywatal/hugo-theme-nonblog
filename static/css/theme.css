@@ -18,9 +18,13 @@ html, body {
 
 body {
     color: #444444;
-    background-color: #e0e0e0;
+    background-color: #eeeeee;
     font-family: "Open Sans", Roboto, "Hiragino Kaku Gothic ProN", "Yu Gothic", "游ゴシック", Meiryo, "メイリオ", sans-serif;
     padding: 0 16px;
+}
+
+main, .menu {
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 }
 
 .container {
@@ -85,7 +89,6 @@ header h1 {
     float: left;
     background-color: #ffffff;
     padding: 0;
-    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
 }
 
 .menu ul {
@@ -188,7 +191,6 @@ main {
     float: right;
     width: calc(100% - 216px);
     padding: 20px 20px 20px 20px;
-    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
 }
 
 header a, h2 a, .terms dt a {
