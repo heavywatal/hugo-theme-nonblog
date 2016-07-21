@@ -1,5 +1,5 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{{ range where .Data.Pages "Layout" "!=" "search" }}
+{{ range where .Data.Pages "Params.private" "!=" true }}
   <url>
     <loc>{{ .Permalink }}</loc>{{ if ge .Sitemap.Priority 0.0 }}
     <priority>{{ .Sitemap.Priority }}</priority>{{ end }}
