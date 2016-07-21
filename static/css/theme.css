@@ -72,6 +72,7 @@ a.readmore:after {
 }
 
 header h1 {
+    display: inline-block;
     margin: 4px 0;
     padding: 6px;
     font-size: 1.2rem;
@@ -82,6 +83,25 @@ header h1 {
     height: 32px;
     vertical-align: text-bottom;
     margin-right: 4px;
+}
+
+.cse-search-box {
+    float: right;
+    margin: 14px 0;
+}
+
+.cse-search-box input {
+    padding: 2px;
+    font-size: 0.9rem;
+    background: #ffffff url(https://www.google.com/cse/static/en/google_custom_search_watermark.gif) left no-repeat;
+}
+
+.cse-search-box input:focus {
+    background: #ffffff;
+}
+
+.cse-results table {
+    box-shadow: none;
 }
 
 .menu {

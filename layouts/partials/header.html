@@ -20,4 +20,7 @@
 {{ with .Site.Params.logo_src }}<img class="logo" src="{{ $.Site.Params.base_path }}{{ . }}" alt="{{ $.Site.Params.logo_alt }}">{{ end }}
 {{ .Site.Title }}
 </a></h1>
+<form class="cse-search-box" action="/search.html">
+  <input type="text" name="q" size="31">
+</form>
 </header>
