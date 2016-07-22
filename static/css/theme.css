@@ -460,6 +460,7 @@ footer {
 @media (max-width: 650px) {
   body {
     padding: 0;
+    font-size: 0.9rem;
   }
   .menu {
     width: 100%;
