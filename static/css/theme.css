@@ -87,17 +87,18 @@ header h1 {
 
 .cse-search-box {
     float: right;
-    margin: 14px 0;
+    margin: 16px 0 6px;
 }
 
 .cse-search-box input {
     padding: 2px;
-    font-size: 0.9rem;
-    background: #ffffff url(https://www.google.com/cse/static/en/google_custom_search_watermark.gif) left no-repeat;
+    font-size: 0.8rem;
+    width: 10em;
+    background: #ffffff;
 }
 
-.cse-search-box input:focus {
-    background: #ffffff;
+.cse-search-box input:invalid {
+    background: #ffffff url(https://www.google.com/cse/static/en/google_custom_search_watermark.gif) left no-repeat;
 }
 
 .cse-results table {
