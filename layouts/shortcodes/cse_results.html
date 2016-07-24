@@ -1,15 +1,7 @@
-{{ partial "header.html" . }}
-<main>
-<article>
-<header><h1><a href="{{ .URL }}">
-Custom Search
-</a></h1>
-</header>
-{{ .Content }}
 <div class="cse-results">
 <script>
   (function() {
-    var cx = '{{ .Site.Params.google_cse }}';
+    var cx = '{{ .Get "id" }}';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
@@ -20,6 +12,3 @@ Custom Search
 </script>
 <gcse:searchresults-only></gcse:searchresults-only>
 </div>
-</article>
-</main>
-{{ partial "footer.html" . }}
