@@ -1,7 +1,7 @@
 <div class="cse-results">
 <script>
   (function() {
-    var cx = '{{ .Get "id" }}';
+    var cx = '{{ .Site.Params.google_cse }}';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
