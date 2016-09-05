@@ -76,12 +76,6 @@ main, .menu {
     padding-bottom: 48px;
 }
 
-.container:after {
-    display: block;
-    content: "";
-    clear: both;
-}
-
 ul, ol {
     padding-left: 1.8rem;
 }
@@ -114,7 +108,6 @@ a.readmore:after {
 
 .menu {
     width: 200px;
-    margin-right: 16px;
     order: 1;
     background-color: #ffffff;
     padding: 0;
@@ -207,19 +200,22 @@ header a, h2 a, .terms dt a {
     color: inherit;
 }
 
+article header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
 article header h1 {
-    display: inline;
-    vertical-align: middle;
+    margin: 0;
     font-size: 1.4rem;
     font-weight: bold;
     background: none;
     border: none;
-    padding: 0 0 4px 0;
 }
 
 .tags {
-    display: inline;
-    vertical-align: middle;
+    margin: 0 0 0 auto;
 }
 
 .tags li, .terms dt {
