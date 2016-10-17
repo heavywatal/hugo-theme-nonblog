@@ -19,7 +19,7 @@ html, body {
 body {
     color: #444444;
     background-color: #eeeeee;
-    font-family: "Open Sans", Roboto, "Hiragino Kaku Gothic ProN", "Yu Gothic", "游ゴシック", Meiryo, "メイリオ", sans-serif;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
     padding: 0 16px;
 }
 
@@ -262,7 +262,7 @@ main a:hover {
 }
 
 pre, code, kbd {
-    font-family: "Ubuntu Mono", "DejaVu Sans Mono", "Menlo", "Consolas", monospace;
+    font-family: "Ubuntu Mono", "DejaVu Sans Mono", Menlo, Consolas, monospace;
 }
 
 pre {
