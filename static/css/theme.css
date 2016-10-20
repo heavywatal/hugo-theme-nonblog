@@ -464,7 +464,10 @@ footer {
 }
 
 @media print {
-  body {font-size: 0.8rem;}
+  body {
+    color: #000000;
+    font-size: 0.8rem;
+  }
   nav {display: none;}
   main {
     margin: 0;
