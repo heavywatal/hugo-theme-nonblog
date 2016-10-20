@@ -16,6 +16,10 @@ html, body {
     padding: 0;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 body {
     color: #444444;
     background-color: #eeeeee;
