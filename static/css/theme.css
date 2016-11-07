@@ -43,29 +43,6 @@ body {
   margin-right: 4px;
 }
 
-.cse-search-box {
-  margin: 16px 0 6px auto;
-}
-
-.cse-search-box input {
-  padding: 2px;
-  font-size: 0.8rem;
-  width: 10em;
-  background: #ffffff;
-}
-
-.cse-search-box input:invalid {
-  background: #ffffff url(https://www.google.com/cse/static/en/google_custom_search_watermark.gif) left no-repeat;
-}
-
-.cse-results table {
-  box-shadow: none;
-}
-
-main, .menu {
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-}
-
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -191,6 +168,10 @@ a.readmore:after {
   background-color: #f6ffff;
 }
 
+main, .menu {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
 main {
   background-color: #ffffff;
   flex: 1;
@@ -199,22 +180,12 @@ main {
   padding: 20px 20px 20px 20px;
 }
 
+main a:hover {
+  text-decoration: underline;
+}
+
 header a, h2 a, .terms dt a {
   color: inherit;
-}
-
-article header {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-
-article header h1 {
-  margin: 0;
-  font-size: 1.4rem;
-  font-weight: bold;
-  background: none;
-  border: none;
 }
 
 .tags {
@@ -241,6 +212,20 @@ article header h1 {
   margin: 0 10px;
 }
 
+article header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+article header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+}
+
 article header + h2 {
   margin-top: 18px;
 }
@@ -258,10 +243,6 @@ article h3 {
   font-size: 1.2rem;
   border-bottom: solid 2px #cccccc;
   font-weight: normal;
-}
-
-main a:hover {
-  text-decoration: underline;
 }
 
 pre, code, kbd {
@@ -347,6 +328,59 @@ blockquote:before {
   z-index: 2;
 }
 
+.pagesource {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  display: none;
+  overflow: scroll;
+  padding: 10px;
+  background-color: #ffffff;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #cccccc;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+input[type="checkbox"]:checked + .pagesource {
+  display: block;
+}
+
+.inputsource {
+  display: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #999999;
+  padding: 12px;
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+.cse-search-box {
+  margin: 16px 0 6px auto;
+}
+
+.cse-search-box input {
+  padding: 2px;
+  font-size: 0.8rem;
+  width: 10em;
+  background: #ffffff;
+}
+
+.cse-search-box input:invalid {
+  background: #ffffff url(https://www.google.com/cse/static/en/google_custom_search_watermark.gif) left no-repeat;
+}
+
+.cse-results table {
+  box-shadow: none;
+}
+
 .warning, .note {
   display: block;
   margin: 8px 0;
@@ -412,40 +446,6 @@ blockquote:before {
 
 #TableOfContents > ul > li > ul > li > ul {
   display: none;
-}
-
-.pagesource {
-  position: fixed;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-  display: none;
-  overflow: scroll;
-  padding: 10px;
-  background-color: #ffffff;
-  border-width: 30px;
-  border-style: solid;
-  border-color: #cccccc;
-  border-color: rgba(0, 0, 0, 0.3);
-}
-
-input[type="checkbox"]:checked + .pagesource {
-  display: block;
-}
-
-.inputsource {
-  display: none;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  color: #999999;
-  padding: 12px;
-  text-align: right;
-  font-size: 0.8rem;
 }
 
 @media (max-width: 650px) {
