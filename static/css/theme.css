@@ -328,30 +328,6 @@ blockquote:before {
   z-index: 2;
 }
 
-.pagesource {
-  position: fixed;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-  display: none;
-  overflow: scroll;
-  padding: 10px;
-  background-color: #ffffff;
-  border-width: 30px;
-  border-style: solid;
-  border-color: #cccccc;
-  border-color: rgba(0, 0, 0, 0.3);
-}
-
-input[type="checkbox"]:checked + .pagesource {
-  display: block;
-}
-
-.inputsource {
-  display: none;
-}
-
 footer {
   position: absolute;
   bottom: 0;
