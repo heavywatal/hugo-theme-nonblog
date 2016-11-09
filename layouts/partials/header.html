@@ -14,7 +14,7 @@
 {{ if .IsPage }}{{ partial "mathjax.html" . }}{{ end }}
 {{ template "_internal/google_analytics.html" . }}
 </head>
-<body><div class="container">
+<body>
 <header><h1><a href="{{ .Site.Params.base_path }}">
 {{ with .Site.Params.logo_src }}<img class="logo" src="{{ $.Site.Params.base_path }}{{ . }}" alt="{{ $.Site.Params.logo_alt }}">{{ end }}
 {{ .Site.Title }}

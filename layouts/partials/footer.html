@@ -1,7 +1,5 @@
 {{ partial "nav.html" . }}
 <footer>{{ .Site.Params.copyrights }}</footer>
-</div><!-- #container -->
-
 <script src="{{ .Site.Params.base_path }}js/highlight.pack.js"></script>
 <script>{{ with .Site.Params.highlightjs_languages}}
 hljs.configure({languages: {{ . }}});{{ end }}
