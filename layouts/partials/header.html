@@ -1,16 +1,13 @@
 <!doctype html>
-<html ⚡ lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<link rel="canonical" href="{{ .URL }}">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic%7CUbuntu+Mono:400,400italic,700,700italic">
 <link rel="stylesheet" href="{{ .Site.Params.base_path }}css/theme.css">
 <link rel="shortcut icon" href="{{ .Site.Params.base_path }}favicon.ico">
 <link rel="icon" href="{{ .Site.Params.base_path }}favicon-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="{{ .Site.Params.base_path }}favicon-192x192.png" sizes="192x192">
-<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-<script async src="https://cdn.ampproject.org/v0.js"></script>
 <title>{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 {{ .Hugo.Generator }}
