@@ -17,7 +17,6 @@ base_path = "/"
 logo_src = "favicon-192x192.png"
 logo_alt = "航"
 copyrights = "(ɔ) 2008 Watal M. Iwasaki"
-page_source = false
 
 # By default, hljs considers all available languages.
 # set [] to disable auto detection
