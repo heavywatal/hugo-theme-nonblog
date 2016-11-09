@@ -6,10 +6,10 @@
     font-size: 0.8rem;
     width: 10em;
     background: #ffffff;
-  }
 
-  input:invalid {
-    background: #ffffff url(https://www.google.com/cse/static/en/google_custom_search_watermark.gif) left no-repeat;
+    &:invalid {
+      background: #ffffff url(https://www.google.com/cse/static/en/google_custom_search_watermark.gif) left no-repeat;
+    }
   }
 }
 

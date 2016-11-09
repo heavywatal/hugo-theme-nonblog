@@ -1,44 +1,46 @@
-.warning, .note {
+@mixin box-base {
   display: block;
   margin: 8px 0;
   padding: 6px 10px 6px 40px;
   background-color: #eeeeee;
   position: relative;
-}
 
-.warning > p, .note > p {
-  margin: 4px 0;
-}
+  & > p {
+    margin: 4px 0;
+  }
 
-.warning:before, .note:before {
-  font-family: "Ubuntu mono", monospace;
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-style: italic;
-  display: inline-block;
-  position: absolute;
-  left: 10px;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 10%;
-  width: 24px;
-  line-height: 1.7;
+  &:before {
+    font-family: "Ubuntu mono", monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10%;
+    width: 24px;
+    line-height: 1.7;
+  }
 }
 
 .warning {
+  @include box-base;
   background-color: #ffeeee;
-}
 
-.warning:before {
-  content: "!";
-  color: #cc3333;
+  &:before {
+    content: "!";
+    color: #cc3333;
+  }
 }
 
 .note {
+  @include box-base;
   background-color: #eeeeff;
-}
 
-.note:before {
-  content: "i";
-  color: #336699;
+  &:before {
+    content: "i";
+    color: #336699;
+  }
 }

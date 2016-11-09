@@ -26,16 +26,6 @@ body {
   padding: 0 16px;
 }
 
-.container > header {
-  width: 100%;
-  display: flex;
-  h1 {
-    margin: 10px 6px;
-    font-size: 1.2rem;
-    font-weight: normal;
-  }
-}
-
 .logo {
   height: 32px;
   vertical-align: text-bottom;
@@ -53,6 +43,16 @@ body {
   max-width: 1080px;
   margin: 0 auto;
   padding-bottom: 48px;
+
+  & > header {
+    width: 100%;
+    display: flex;
+    h1 {
+      margin: 10px 6px;
+      font-size: 1.2rem;
+      font-weight: normal;
+    }
+  }
 }
 
 ul, ol {
@@ -64,28 +64,26 @@ a {
   text-decoration: none;
 }
 
-a.readmore {
+.readmore {
   padding: 3px 30px 3px 20px;
   border-radius: 4px;
   font-weight: normal;
   color: #ffffff;
   background-color: #bbbbbb;
   position: relative;
-}
 
-a.readmore:hover {
-  background-color: #1199aa;
-  text-decoration: none;
-}
+  &:hover {
+    background-color: #1199aa;
+    text-decoration: none;
+  }
 
-a.readmore:after {
-  content: "❯";
-  position: absolute;
-  right: 8px;
-  color: #ffffff;
+  &:after {
+    content: "❯";
+    position: absolute;
+    right: 8px;
+    color: #ffffff;
+  }
 }
-
-@import "menu";
 
 main, .menu {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
@@ -171,23 +169,23 @@ pre, code, kbd {
   font-family: "Ubuntu Mono", "DejaVu Sans Mono", Menlo, Consolas, monospace;
 }
 
-pre {
-  background-color: #f7f7f7;
-  padding: 8px;
-  margin: -4px 0 20px;
-  line-height: 1.3;
-  overflow-x: auto;
-}
-
 code {
   background-color: #f7f7f7;
   background-color: rgba(0, 0, 0, 0.05);
   padding: 2px 4px;
 }
 
-pre code {
-  background: none;
-  padding: 0;
+pre {
+  background-color: #f7f7f7;
+  padding: 8px;
+  margin: -4px 0 20px;
+  line-height: 1.3;
+  overflow-x: auto;
+
+  code {
+    background: none;
+    padding: 0;
+  }
 }
 
 kbd {
@@ -201,17 +199,15 @@ kbd {
   border-radius: 3px;
 }
 
-.gist-it-gist {
-  font-size: 0.85rem;
-}
+dl {
+  dt {
+    font-weight: bold;
+    padding: 2px 0 0 0;
+  }
 
-dl dt {
-  font-weight: bold;
-  padding: 2px 0 0 0;
-}
-
-dl dd {
-  margin: 0 0 4px 1.5rem;
+  dd {
+    margin: 0 0 4px 1.5rem;
+  }
 }
 
 dd p {
@@ -237,17 +233,17 @@ blockquote {
   border-left: solid 4px #cccccc;
   position: relative;
   z-index: 1;
-}
 
-blockquote:before {
-  content: "“";
-  position: absolute;
-  top: -10px;
-  left: 8px;
-  font-size: 2.4rem;
-  font-family: serif;
-  color: #999999;
-  z-index: 2;
+  &:before {
+    content: "“";
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    font-size: 2.4rem;
+    font-family: serif;
+    color: #999999;
+    z-index: 2;
+  }
 }
 
 footer {
@@ -260,6 +256,7 @@ footer {
   font-size: 0.8rem;
 }
 
+@import "menu";
 @import "sce";
 @import "box";
 @import "toc";

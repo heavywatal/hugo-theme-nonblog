@@ -15,11 +15,11 @@
 
   div {
     padding: 0;
-  }
 
-  div > a {
-    padding: 10px 6px;
-    font-size: 1.1rem;
+    & > a {
+      padding: 10px 6px;
+      font-size: 1.1rem;
+    }
   }
 
   a {
@@ -28,35 +28,37 @@
     display: block;
   }
 
-  input {
-    display: none;
-  }
-
-  input:checked + label + ul {
-    max-height: 800px;
-  }
-
   label {
     display: block;
     position: relative;
     padding: 10px 6px;
     font-size: 1.1rem;
+
+    &:after {
+      content: "❯";
+      position: absolute;
+      right: 8px;
+      color: #cccccc;
+      transition: all 0.2s ease-out;
+    }
+
+    &.active:after {
+      color: #1199aa;
+    }
   }
 
-  label:after {
-    content: "❯";
-    position: absolute;
-    right: 8px;
-    color: #cccccc;
-    transition: all 0.2s ease-out;
+  input {
+    display: none;
   }
 
-  input:checked + label:after {
-    transform: rotate(90deg);
-  }
+  input:checked {
+    & + label + ul {
+      max-height: 800px;
+    }
 
-  label.active:after {
-    color: #1199aa;
+    & + label:after {
+      transform: rotate(90deg);
+    }
   }
 
   li {
