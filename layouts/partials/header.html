@@ -11,7 +11,7 @@
 <title>{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 {{ .Hugo.Generator }}
-{{ if .IsPage }}{{ partial "mathjax.html" . }}{{ end }}
+{{ if .IsPage }}{{ partial "mathjax.html" . }}{{ partial "breadcrumblist.html" . }}{{ end }}
 {{ template "_internal/google_analytics.html" . }}
 </head>
 <body>

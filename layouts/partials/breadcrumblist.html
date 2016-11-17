@@ -1,0 +1,15 @@
+<script type="application/ld+json">{
+"@context": "http://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+  {"@type": "ListItem",
+   "position": 1,
+   "item": {
+    "@id": {{ delimit (slice .Site.BaseURL .File.Dir) "" }},
+    "name": "{{ .Section }}"}},
+  {"@type": "ListItem",
+   "position": 2,
+   "item": {
+     "@id": {{ .Permalink }},
+     "name": "{{ .Title }}"}}
+]}</script>
