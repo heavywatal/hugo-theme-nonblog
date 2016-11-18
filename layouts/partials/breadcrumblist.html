@@ -5,7 +5,7 @@
  {"@type": "ListItem",
   "position": 1,
   "item": {
-   "@id": {{ delimit (slice .Site.BaseURL .File.Dir) "" }},
+   "@id": {{ delimit (slice .Site.BaseURL .Section ".html") "" }},
    "name": "{{ .Section }}"}},
  {"@type": "ListItem",
   "position": 2,
