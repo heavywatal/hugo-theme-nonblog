@@ -1,0 +1,2 @@
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+{{ with .Site.Params.og_image }}<meta property="og:image" content="{{ . }}">{{ end }}

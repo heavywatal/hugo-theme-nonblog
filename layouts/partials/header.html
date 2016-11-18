@@ -10,6 +10,7 @@
 <link rel="apple-touch-icon" href="{{ .Site.Params.base_path }}favicon-192x192.png" sizes="192x192">
 <title>{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+{{ partial "ogp.html" . }}
 {{ .Hugo.Generator }}
 {{ if .IsPage }}{{ partial "mathjax.html" . }}
 {{ if .Section }}{{ partial "breadcrumblist.html" . }}{{ end }}{{ end }}
