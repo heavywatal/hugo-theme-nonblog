@@ -5,7 +5,7 @@
 <a href="{{ .URL }}">{{ .Title }}</a>
 </h1></header>
 <ul>{{ range .Data.Pages }}
-<li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+<li><a href="{{ .RelPermalink }}">{{ .Title }}{{ with .Params.subtitle }} — {{ . }}{{ end }}</a>{{ end }}
 </ul>
 </article>
 </main>
