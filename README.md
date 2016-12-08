@@ -13,10 +13,12 @@ theme = "nonblog"
 googleAnalytics = "UA-***"
 
 [params]
+author = "Watal M. Iwasaki"
 base_path = "/"
 logo_src = "favicon-192x192.png"
-logo_alt = "航"
+logo_alt = "LOGO"
 copyrights = "(ɔ) 2008 Watal M. Iwasaki"
+google_cse = "00*******************:***********"
 
 # By default, hljs considers all available languages.
 # set [] to disable auto detection
