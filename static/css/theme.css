@@ -346,6 +346,11 @@ blockquote:before {
   box-shadow: none;
 }
 
+.gsc-adBlock {
+  height: 1rem !important;
+  overflow: hidden;
+}
+
 .warning {
   display: block;
   margin: 8px 0;
@@ -536,3 +541,4 @@ blockquote:before {
 .hljs-strong {
   font-weight: bold;
 }
+
