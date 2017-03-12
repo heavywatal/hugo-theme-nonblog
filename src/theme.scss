@@ -210,6 +210,11 @@ blockquote {
   background-color: #bbbbbb;
   a {
     color: inherit;
+    &:before {
+       font-family: FontAwesome;
+       content: "\f02b ";
+       margin-right: 0.2em;
+    }
   }
 }
 

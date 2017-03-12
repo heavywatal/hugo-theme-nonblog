@@ -214,6 +214,12 @@ blockquote:before {
   color: inherit;
 }
 
+.tags li a:before, .terms dt a:before {
+  font-family: FontAwesome;
+  content: "\f02b ";
+  margin-right: 0.2em;
+}
+
 .terms ul {
   margin: 0 0 3ex 0;
   padding: 0;
@@ -541,4 +547,3 @@ blockquote:before {
 .hljs-strong {
   font-weight: bold;
 }
-
