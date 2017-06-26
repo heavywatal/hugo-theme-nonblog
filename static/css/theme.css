@@ -182,7 +182,6 @@ blockquote {
   padding: 4px 12px 1px;
   border-left: solid 4px #cccccc;
   position: relative;
-  z-index: 1;
 }
 
 blockquote:before {
@@ -193,7 +192,6 @@ blockquote:before {
   font-size: 2.4rem;
   font-family: serif;
   color: #999999;
-  z-index: 2;
 }
 
 .tags {
