@@ -5,7 +5,7 @@
 {{ .Title }}{{ with .Params.subtitle }} — {{ . }}{{ end }}
 </a></h1>
 <ul class="tags">{{ range .Params.tags }}
-<li><a href="{{ $.Site.Params.base_path }}tags/{{ . | urlize }}">{{ . }}</a></li>{{ end }}
+<li><a href="{{ $.Site.Params.base_path }}tags/{{ . | urlize }}{{ if $.Site.Params.uglyURLs }}.html{{ end }}">{{ . }}</a></li>{{ end }}
 </ul>
 </header>
 {{ if .Params.toc }}{{ .TableOfContents }}{{ end }}
