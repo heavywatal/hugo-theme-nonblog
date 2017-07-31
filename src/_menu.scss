@@ -43,7 +43,7 @@
     }
 
     &.active:after {
-      color: #1199aa;
+      color: #E08010;
     }
   }
 
@@ -71,13 +71,13 @@
 
   .active {
     font-weight: bold;
-    color: #1199aa;
-    border-color: #1199aa;
+    color: #E08010;
+    border-color: #E08010;
   }
 
   label:hover, a:hover {
     cursor: pointer;
-    color: #1199aa;
-    background-color: #f6ffff;
+    color: #E08010;
+    background-color: #fffff0;
   }
 }
