@@ -4,6 +4,9 @@
   universal-selector: false, font-sizes: false,
   qualified-headings: false, unique-headings: false,
 */
+$color-link: #429131;
+$color-theme: #E08010;
+
 * {
   box-sizing: border-box;
 }
@@ -61,7 +64,7 @@ ul, ol {
 }
 
 a {
-  color: #229955;
+  color: $color-link;
   text-decoration: none;
 }
 
@@ -237,7 +240,7 @@ blockquote {
   position: relative;
 
   &:hover {
-    background-color: #229955;
+    background-color: $color-link;
     text-decoration: none;
   }
 

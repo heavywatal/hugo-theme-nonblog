@@ -64,7 +64,7 @@ ul, ol {
 }
 
 a {
-  color: #229955;
+  color: #429131;
   text-decoration: none;
 }
 
@@ -238,7 +238,7 @@ blockquote:before {
 }
 
 .readmore:hover {
-  background-color: #229955;
+  background-color: #429131;
   text-decoration: none;
 }
 
@@ -296,7 +296,7 @@ blockquote:before {
 }
 
 .menu label.active:after {
-  color: #E08010;
+  color: #429131;
 }
 
 .menu input {
@@ -321,14 +321,14 @@ blockquote:before {
 
 .menu .active {
   font-weight: bold;
-  color: #E08010;
-  border-color: #E08010;
+  color: #429131;
+  border-color: #429131;
 }
 
 .menu label:hover, .menu a:hover {
   cursor: pointer;
-  color: #E08010;
-  background-color: #fffff0;
+  color: #429131;
+  background-color: #f8fcf8;
 }
 
 .cse-search-box {
