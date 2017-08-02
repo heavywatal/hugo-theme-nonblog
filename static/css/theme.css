@@ -361,7 +361,7 @@ blockquote:before {
   padding: 6px 10px 6px 40px;
   background-color: #eeeeee;
   position: relative;
-  background-color: #ffeeee;
+  background-color: #fbe9e6;
 }
 
 .warning > p {
@@ -385,7 +385,7 @@ blockquote:before {
 
 .warning:before {
   content: "!";
-  color: #cc3333;
+  color: #A4321A;
 }
 
 .note {
@@ -394,7 +394,7 @@ blockquote:before {
   padding: 6px 10px 6px 40px;
   background-color: #eeeeee;
   position: relative;
-  background-color: #eeeeff;
+  background-color: #fef6ec;
 }
 
 .note > p {
@@ -418,7 +418,7 @@ blockquote:before {
 
 .note:before {
   content: "i";
-  color: #336699;
+  color: #E08010;
 }
 
 #TableOfContents {

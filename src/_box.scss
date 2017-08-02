@@ -27,20 +27,20 @@
 
 .warning {
   @include box-base;
-  background-color: #ffeeee;
+  background-color: lighten($color-warning, 57%);
 
   &:before {
     content: "!";
-    color: #cc3333;
+    color: $color-warning;
   }
 }
 
 .note {
   @include box-base;
-  background-color: #eeeeff;
+  background-color: lighten($color-note, 49%);
 
   &:before {
     content: "i";
-    color: #336699;
+    color: $color-note;
   }
 }
