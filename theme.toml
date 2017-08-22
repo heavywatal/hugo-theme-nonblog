@@ -4,8 +4,8 @@ licenselink = "https://github.com/heavywatal/hugo-theme-nonblog/blob/master/LICE
 description = "A minimal theme for non-blog site with a hierarchical sidebar"
 tags = ["nonblog", "minimal", "responsive"]
 features = ["syntax highlighting"]
-min_version = 0.15
+min_version = 0.25
 
 [author]
 name = "heavywatal"
-homepage = "https://github.com/heavywatal"
+homepage = "https://heavywatal.github.io"
