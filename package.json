@@ -1,9 +1,10 @@
 {
   "name": "hugo-theme-nonblog",
   "version": "0.1.0",
-  "description": "This is a minimal theme for non-blog websites with a hierarchical sidebar",
+  "description": "Minimal theme for non-blog websites",
   "scripts": {
-    "build": "node-sass --output-style=expanded -o static/css sass/theme.scss"
+    "build": "node-sass --output-style=expanded -o static/css/ sass/",
+    "start": "node-sass --output-style=expanded -o static/css/ -w sass/"
   },
   "repository": "https://github.com/heavywatal/hugo-theme-nonblog.git",
   "license": "MIT",
