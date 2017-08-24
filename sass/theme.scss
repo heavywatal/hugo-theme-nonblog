@@ -1,13 +1,8 @@
 @charset "UTF-8";
-/*csslint
-  box-model: false, box-sizing: false,
-  universal-selector: false, font-sizes: false,
-  qualified-headings: false, unique-headings: false,
-*/
 $color-link:    #429131;
-$color-theme:   #E08010;
-$color-note:    #E08010;
-$color-warning: #A4321A;
+$color-theme:   #e08010;
+$color-note:    #e08010;
+$color-warning: #a4321a;
 
 * {
   box-sizing: border-box;
@@ -29,22 +24,25 @@ body {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 16px;
-  color: #444444;
-  background-color: #eeeeee;
+  color: #444;
+  background-color: #eee;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
 }
 
 header {
   width: 100%;
   display: flex;
+
   h1 {
     margin: 10px 6px;
     font-size: 1.2rem;
     font-weight: normal;
   }
+
   a {
     color: inherit;
   }
+
   .logo {
     height: 32px;
     vertical-align: text-bottom;
@@ -55,13 +53,14 @@ header {
 footer {
   order: 3;
   width: 100%;
-  color: #999999;
+  color: #999;
   padding: 12px 4px;
   text-align: right;
   font-size: 0.8rem;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 1.8rem;
 }
 
@@ -70,16 +69,17 @@ a {
   text-decoration: none;
 }
 
-main, .menu {
+main,
+.menu {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 main {
-  background-color: #ffffff;
+  background-color: #fff;
   flex: 1;
   max-width: calc(100% - 216px);
   order: 2;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
 }
 
 article {
@@ -87,6 +87,7 @@ article {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+
     h1 {
       margin: 0;
       font-size: 1.4rem;
@@ -103,15 +104,15 @@ article {
   h2 {
     font-size: 1.4rem;
     background-color: #e8e8e8;
-    border-left: solid 8px #aaaaaa;
-    margin: 32px 0 12px 0;
+    border-left: solid 8px #aaa;
+    margin: 32px 0 12px;
     padding: 6px 8px;
     font-weight: normal;
   }
 
   h3 {
     font-size: 1.2rem;
-    border-bottom: solid 2px #cccccc;
+    border-bottom: solid 2px #ccc;
     font-weight: normal;
   }
 
@@ -120,7 +121,9 @@ article {
   }
 }
 
-pre, code, kbd {
+pre,
+code,
+kbd {
   font-family: "Ubuntu Mono", "DejaVu Sans Mono", Menlo, Consolas, monospace;
 }
 
@@ -147,17 +150,17 @@ kbd {
   display: inline-block;
   vertical-align: middle;
   font-size: 0.92rem;
-  padding: 1px 4px 1px;
+  padding: 1px 4px;
   margin: -4px 2px 0 0;
   box-shadow: 1px 1px 1px #808080;
-  border: solid 1px #cccccc;
+  border: solid 1px #ccc;
   border-radius: 3px;
 }
 
 dl {
   dt {
     font-weight: bold;
-    padding: 2px 0 0 0;
+    padding: 2px 0 0;
   }
 
   dd {
@@ -175,27 +178,28 @@ table {
 }
 
 thead {
-  background: #dddddd;
+  background: #ddd;
 }
 
-th, td {
+th,
+td {
   padding: 2px 4px;
 }
 
 blockquote {
   margin: 8px 16px;
   padding: 4px 12px 1px;
-  border-left: solid 4px #cccccc;
+  border-left: solid 4px #ccc;
   position: relative;
 
-  &:before {
+  &::before {
     content: "“";
     position: absolute;
     top: -10px;
     left: 8px;
     font-size: 2.4rem;
     font-family: serif;
-    color: #999999;
+    color: #999;
   }
 }
 
@@ -203,27 +207,30 @@ blockquote {
   margin: 0 0 0 auto;
 }
 
-.tags li, .terms dt {
+.tags li,
+.terms dt {
   display: inline-block;
   padding: 3px 5px;
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: normal;
-  color: #ffffff;
-  background-color: #bbbbbb;
+  color: #fff;
+  background-color: #bbb;
+
   a {
     color: inherit;
-    &:before {
-       font-family: FontAwesome;
-       content: "\f02b ";
-       margin-right: 0.2em;
+
+    &::before {
+      font-family: FontAwesome;
+      content: "\f02b ";
+      margin-right: 0.2em;
     }
   }
 }
 
 .terms {
   ul {
-    margin: 0 0 3ex 0;
+    margin: 0 0 3ex;
     padding: 0;
   }
 
@@ -237,8 +244,8 @@ blockquote {
   padding: 3px 30px 3px 20px;
   border-radius: 4px;
   font-weight: normal;
-  color: #ffffff;
-  background-color: #bbbbbb;
+  color: #fff;
+  background-color: #bbb;
   position: relative;
 
   &:hover {
@@ -246,13 +253,14 @@ blockquote {
     text-decoration: none;
   }
 
-  &:after {
+  &::after {
     content: "❯";
     position: absolute;
     right: 8px;
-    color: #ffffff;
+    color: #fff;
   }
 }
+
 @import "menu";
 @import "sce";
 @import "box";

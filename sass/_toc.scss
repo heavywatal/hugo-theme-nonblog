@@ -1,9 +1,9 @@
 #TableOfContents {
   max-width: 80%;
-  border: solid 1px #999999;
+  border: solid 1px #999;
   margin: 20px 20px 20px auto;
 
-  &:before {
+  &::before {
     content: "Table of Contents";
     margin: 6px;
     padding: 6px;

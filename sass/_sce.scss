@@ -5,10 +5,10 @@
     padding: 2px;
     font-size: 0.8rem;
     width: 10em;
-    background: #ffffff;
+    background: #fff;
 
     &:invalid {
-      background: #ffffff url(https://www.google.com/cse/static/en/google_custom_search_watermark.gif) left no-repeat;
+      background: #fff url(https://www.google.com/cse/static/en/google_custom_search_watermark.gif) left no-repeat;
     }
   }
 }

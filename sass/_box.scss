@@ -2,14 +2,14 @@
   display: block;
   margin: 8px 0;
   padding: 6px 10px 6px 40px;
-  background-color: #eeeeee;
+  background-color: #eee;
   position: relative;
 
   & > p {
     margin: 4px 0;
   }
 
-  &:before {
+  &::before {
     font-family: "Ubuntu mono", monospace;
     font-size: 1.2rem;
     font-weight: bold;
@@ -27,9 +27,10 @@
 
 .warning {
   @include box-base;
+
   background-color: lighten($color-warning, 57%);
 
-  &:before {
+  &::before {
     content: "!";
     color: $color-warning;
   }
@@ -37,9 +38,10 @@
 
 .note {
   @include box-base;
+
   background-color: lighten($color-note, 49%);
 
-  &:before {
+  &::before {
     content: "i";
     color: $color-note;
   }

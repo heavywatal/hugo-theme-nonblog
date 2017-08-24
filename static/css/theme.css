@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/*csslint
-  box-model: false, box-sizing: false,
-  universal-selector: false, font-sizes: false,
-  qualified-headings: false, unique-headings: false,
-*/
 * {
   box-sizing: border-box;
 }
@@ -24,8 +19,8 @@ body {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 16px;
-  color: #444444;
-  background-color: #eeeeee;
+  color: #444;
+  background-color: #eee;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
 }
 
@@ -53,13 +48,14 @@ header .logo {
 footer {
   order: 3;
   width: 100%;
-  color: #999999;
+  color: #999;
   padding: 12px 4px;
   text-align: right;
   font-size: 0.8rem;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 1.8rem;
 }
 
@@ -68,16 +64,17 @@ a {
   text-decoration: none;
 }
 
-main, .menu {
+main,
+.menu {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 main {
-  background-color: #ffffff;
+  background-color: #fff;
   flex: 1;
   max-width: calc(100% - 216px);
   order: 2;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
 }
 
 article header {
@@ -101,15 +98,15 @@ article header + h2 {
 article h2 {
   font-size: 1.4rem;
   background-color: #e8e8e8;
-  border-left: solid 8px #aaaaaa;
-  margin: 32px 0 12px 0;
+  border-left: solid 8px #aaa;
+  margin: 32px 0 12px;
   padding: 6px 8px;
   font-weight: normal;
 }
 
 article h3 {
   font-size: 1.2rem;
-  border-bottom: solid 2px #cccccc;
+  border-bottom: solid 2px #ccc;
   font-weight: normal;
 }
 
@@ -117,7 +114,9 @@ article a:hover {
   text-decoration: underline;
 }
 
-pre, code, kbd {
+pre,
+code,
+kbd {
   font-family: "Ubuntu Mono", "DejaVu Sans Mono", Menlo, Consolas, monospace;
 }
 
@@ -144,16 +143,16 @@ kbd {
   display: inline-block;
   vertical-align: middle;
   font-size: 0.92rem;
-  padding: 1px 4px 1px;
+  padding: 1px 4px;
   margin: -4px 2px 0 0;
   box-shadow: 1px 1px 1px #808080;
-  border: solid 1px #cccccc;
+  border: solid 1px #ccc;
   border-radius: 3px;
 }
 
 dl dt {
   font-weight: bold;
-  padding: 2px 0 0 0;
+  padding: 2px 0 0;
 }
 
 dl dd {
@@ -170,56 +169,60 @@ table {
 }
 
 thead {
-  background: #dddddd;
+  background: #ddd;
 }
 
-th, td {
+th,
+td {
   padding: 2px 4px;
 }
 
 blockquote {
   margin: 8px 16px;
   padding: 4px 12px 1px;
-  border-left: solid 4px #cccccc;
+  border-left: solid 4px #ccc;
   position: relative;
 }
 
-blockquote:before {
+blockquote::before {
   content: "“";
   position: absolute;
   top: -10px;
   left: 8px;
   font-size: 2.4rem;
   font-family: serif;
-  color: #999999;
+  color: #999;
 }
 
 .tags {
   margin: 0 0 0 auto;
 }
 
-.tags li, .terms dt {
+.tags li,
+.terms dt {
   display: inline-block;
   padding: 3px 5px;
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: normal;
-  color: #ffffff;
-  background-color: #bbbbbb;
+  color: #fff;
+  background-color: #bbb;
 }
 
-.tags li a, .terms dt a {
+.tags li a,
+.terms dt a {
   color: inherit;
 }
 
-.tags li a:before, .terms dt a:before {
+.tags li a::before,
+.terms dt a::before {
   font-family: FontAwesome;
   content: "\f02b ";
   margin-right: 0.2em;
 }
 
 .terms ul {
-  margin: 0 0 3ex 0;
+  margin: 0 0 3ex;
   padding: 0;
 }
 
@@ -232,8 +235,8 @@ blockquote:before {
   padding: 3px 30px 3px 20px;
   border-radius: 4px;
   font-weight: normal;
-  color: #ffffff;
-  background-color: #bbbbbb;
+  color: #fff;
+  background-color: #bbb;
   position: relative;
 }
 
@@ -242,17 +245,17 @@ blockquote:before {
   text-decoration: none;
 }
 
-.readmore:after {
+.readmore::after {
   content: "❯";
   position: absolute;
   right: 8px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .menu {
   width: 200px;
   order: 1;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 0;
 }
 
@@ -287,15 +290,15 @@ blockquote:before {
   font-size: 1.1rem;
 }
 
-.menu label:after {
+.menu label::after {
   content: "❯";
   position: absolute;
   right: 8px;
-  color: #cccccc;
+  color: #ccc;
   transition: all 0.2s ease-out;
 }
 
-.menu label.active:after {
+.menu label.active::after {
   color: #429131;
 }
 
@@ -307,7 +310,7 @@ blockquote:before {
   max-height: 800px;
 }
 
-.menu input:checked + label:after {
+.menu input:checked + label::after {
   transform: rotate(90deg);
 }
 
@@ -315,8 +318,11 @@ blockquote:before {
   background: #f4f4f4;
 }
 
-.menu div, .menu label, .menu li, .menu label.active {
-  border-bottom: 1px solid #cccccc;
+.menu div,
+.menu label,
+.menu li,
+.menu label.active {
+  border-bottom: 1px solid #ccc;
 }
 
 .menu .active {
@@ -325,7 +331,8 @@ blockquote:before {
   border-color: #429131;
 }
 
-.menu label:hover, .menu a:hover {
+.menu label:hover,
+.menu a:hover {
   cursor: pointer;
   color: #429131;
   background-color: #f8fcf8;
@@ -339,11 +346,11 @@ blockquote:before {
   padding: 2px;
   font-size: 0.8rem;
   width: 10em;
-  background: #ffffff;
+  background: #fff;
 }
 
 .cse-search-box input:invalid {
-  background: #ffffff url(https://www.google.com/cse/static/en/google_custom_search_watermark.gif) left no-repeat;
+  background: #fff url(https://www.google.com/cse/static/en/google_custom_search_watermark.gif) left no-repeat;
 }
 
 .cse-results table {
@@ -359,7 +366,7 @@ blockquote:before {
   display: block;
   margin: 8px 0;
   padding: 6px 10px 6px 40px;
-  background-color: #eeeeee;
+  background-color: #eee;
   position: relative;
   background-color: #fbe9e6;
 }
@@ -368,7 +375,7 @@ blockquote:before {
   margin: 4px 0;
 }
 
-.warning:before {
+.warning::before {
   font-family: "Ubuntu mono", monospace;
   font-size: 1.2rem;
   font-weight: bold;
@@ -383,16 +390,16 @@ blockquote:before {
   line-height: 1.7;
 }
 
-.warning:before {
+.warning::before {
   content: "!";
-  color: #A4321A;
+  color: #a4321a;
 }
 
 .note {
   display: block;
   margin: 8px 0;
   padding: 6px 10px 6px 40px;
-  background-color: #eeeeee;
+  background-color: #eee;
   position: relative;
   background-color: #fef6ec;
 }
@@ -401,7 +408,7 @@ blockquote:before {
   margin: 4px 0;
 }
 
-.note:before {
+.note::before {
   font-family: "Ubuntu mono", monospace;
   font-size: 1.2rem;
   font-weight: bold;
@@ -416,18 +423,18 @@ blockquote:before {
   line-height: 1.7;
 }
 
-.note:before {
+.note::before {
   content: "i";
-  color: #E08010;
+  color: #e08010;
 }
 
 #TableOfContents {
   max-width: 80%;
-  border: solid 1px #999999;
+  border: solid 1px #999;
   margin: 20px 20px 20px auto;
 }
 
-#TableOfContents:before {
+#TableOfContents::before {
   content: "Table of Contents";
   margin: 6px;
   padding: 6px;
@@ -461,7 +468,7 @@ blockquote:before {
 
 @media print {
   body {
-    color: #000000;
+    color: #000;
     font-size: 0.8rem;
   }
   nav {
