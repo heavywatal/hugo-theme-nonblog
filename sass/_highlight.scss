@@ -1,16 +1,13 @@
-@charset "UTF-8";
-
 .hljs-comment,
 .hljs-quote,
 .hljs-meta {
-  color: #969896;
+  color: #6a737d;
 }
 
 .hljs-keyword,
 .hljs-meta-keyword,
-.hljs-selector-tag,
 .hljs-subst {
-  color: #a71d5d;
+  color: #d73a49;
 }
 
 .hljs-link,
@@ -24,27 +21,27 @@
   color: #0086b3;
 }
 
+.hljs-attribute {
+  color: #005cc5;
+}
+
 .hljs-string,
 .hljs-doctag,
 .hljs-regexp {
-  color: #183691;
+  color: #032f62;
 }
 
-.hljs-title {
-  color: #795da3;
+.hljs-name,
+.hljs-selector-tag {
+  color: #22863a;
 }
 
-.hljs-section,
-.hljs-selector-id {
-  font-weight: bold;
-}
-
-.hljs-name {
-  color: #63a35c;
-}
-
-.hljs-attr {
-  color: #795da3;
+.hljs-attr,
+.hljs-title,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-pseudo {
+  color: #6f42c1;
 }
 
 .hljs-symbol,
@@ -68,6 +65,7 @@
   font-style: italic;
 }
 
+.hljs-section,
 .hljs-strong {
   font-weight: bold;
 }
