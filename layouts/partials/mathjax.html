@@ -1,17 +1,12 @@
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
+  showProcessingMessages: false,
+  messageStyle: "none",
   displayAlign: "left",
   displayIndent: "2em",
   tex2jax: {
     inlineMath: [['$','$']],
-    displayMath: [['$$','$$']],
-    processEnvironments: false
-  }
-});
-MathJax.Hub.Queue(function() {
-  var all = MathJax.Hub.getAllJax(), i;
-  for(i = 0; i {{ "<" | safeHTML }} all.length; i += 1) {
-    all[i].SourceElement().parentNode.classList.add('has-jax');
+    displayMath: [['\\[', '\\]']]
   }
 });
 </script>
