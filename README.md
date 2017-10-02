@@ -20,10 +20,8 @@ logo_alt = "LOGO"
 theme_color = "#e08010"
 copyrights = "(ɔ) 2008 Watal M. Iwasaki"
 google_cse = "00*******************:***********"
-
-# By default, hljs considers all available languages.
-# set [] to disable auto detection
-highlightjs_languages = ["sh", "c++", "python", "r", "tex"]
+pygmentsCodefences = true
+pygmentsUseClasses = true
 
 [taxonomies]
 tag = "tags"
