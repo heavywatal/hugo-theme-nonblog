@@ -366,7 +366,6 @@ blockquote::before {
   display: block;
   margin: 8px 0;
   padding: 6px 10px 6px 40px;
-  background-color: #eee;
   position: relative;
   background-color: #fbe9e6;
 }
@@ -399,7 +398,6 @@ blockquote::before {
   display: block;
   margin: 8px 0;
   padding: 6px 10px 6px 40px;
-  background-color: #eee;
   position: relative;
   background-color: #fef6ec;
 }
@@ -481,342 +479,113 @@ blockquote::before {
   }
 }
 
-.chroma {
-  /* LineNumbers */
-  /* Keyword */
-  /* KeywordConstant */
-  /* KeywordDeclaration */
-  /* KeywordNamespace */
-  /* KeywordPseudo */
-  /* KeywordReserved */
-  /* KeywordType */
-  /* NameAttribute */
-  /* NameBuiltin */
-  /* NameClass */
-  /* NameConstant */
-  /* NameDecorator */
-  /* NameEntity */
-  /* NameException */
-  /* NameFunction */
-  /* NameLabel */
-  /* NameNamespace */
-  /* NameTag */
-  /* NameVariable */
-  /* NameVariableClass */
-  /* NameVariableGlobal */
-  /* NameVariableInstance */
-  /* LiteralString */
-  /* LiteralStringAffix */
-  /* LiteralStringBacktick */
-  /* LiteralStringChar */
-  /* LiteralStringDelimiter */
-  /* LiteralStringDoc */
-  /* LiteralStringDouble */
-  /* LiteralStringEscape */
-  /* LiteralStringHeredoc */
-  /* LiteralStringInterpol */
-  /* LiteralStringOther */
-  /* LiteralStringRegex */
-  /* LiteralStringSingle */
-  /* LiteralStringSymbol */
-  /* LiteralNumber */
-  /* LiteralNumberBin */
-  /* LiteralNumberFloat */
-  /* LiteralNumberHex */
-  /* LiteralNumberInteger */
-  /* LiteralNumberIntegerLong */
-  /* LiteralNumberOct */
-  /* Operator */
-  /* OperatorWord */
-  /* Comment */
-  /* CommentHashbang */
-  /* CommentMultiline */
-  /* CommentSingle */
-  /* CommentSpecial */
-  /* CommentPreproc */
-  /* CommentPreprocFile */
-  /* GenericDeleted */
-  /* GenericEmph */
-  /* GenericError */
-  /* GenericHeading */
-  /* GenericInserted */
-  /* GenericOutput */
-  /* GenericPrompt */
-  /* GenericStrong */
-  /* GenericSubheading */
-  /* GenericTraceback */
-  /* TextWhitespace */
+.chroma .err,
+.chroma .w,
+.chroma .n,
+.chroma .o,
+.chroma .p {
+  color: #444;
 }
 
-.chroma .err {
-  color: #666;
-}
-
-.chroma .ln {
-  margin-right: 0.4em;
-  padding: 0 0.4em;
-}
-
-.chroma .k {
+.chroma .k,
+.chroma .kd,
+.chroma .kn,
+.chroma .kp,
+.chroma .kr,
+.chroma .ow {
   color: #d73a49;
 }
 
-.chroma .kc {
-  color: #005cc5;
-}
-
-.chroma .kd {
-  color: #d73a49;
-}
-
-.chroma .kn {
-  color: #d73a49;
-}
-
-.chroma .kp {
-  color: #d73a49;
-}
-
-.chroma .kr {
-  color: #d73a49;
-}
-
-.chroma .kt {
-  color: #005cc5;
-}
-
-.chroma .n {
-  color: #6f42c1;
-}
-
-.chroma .na {
-  color: #6f42c1;
-}
-
-.chroma .nb {
-  color: #22863a;
-}
-
-.chroma .nc {
-  color: #6f42c1;
-}
-
-.chroma .no {
-  color: #005cc5;
-}
-
-.chroma .nd {
-  color: #005cc5;
-}
-
-.chroma .ni {
-  color: #005cc5;
-}
-
-.chroma .ne {
-  color: #d70;
-}
-
-.chroma .nf {
-  color: #6f42c1;
-}
-
-.chroma .nl {
-  color: #d70;
-}
-
-.chroma .nn {
-  color: #005cc5;
-}
-
-.chroma .nt {
-  color: #22863a;
-}
-
-.chroma .nv {
-  color: #6f42c1;
-}
-
-.chroma .nx {
-  color: #6f42c1;
-}
-
-.chroma .vc {
-  color: #d70;
-}
-
-.chroma .vg {
-  color: #d70;
-}
-
-.chroma .vi {
-  color: #d70;
-}
-
+.chroma .kc,
+.chroma .kt,
+.chroma .no,
+.chroma .nd,
+.chroma .ni,
+.chroma .nn,
+.chroma .vc,
+.chroma .vg,
+.chroma .vi,
 .chroma .vm {
   color: #005cc5;
 }
 
-.chroma .s {
-  color: #032f62;
+.chroma .na,
+.chroma .nc,
+.chroma .nf,
+.chroma .nv,
+.chroma .nx {
+  color: #6f42c1;
 }
 
-.chroma .sa {
-  color: #032f62;
+.chroma .nb,
+.chroma .bp,
+.chroma .ne,
+.chroma .nl,
+.chroma .nt {
+  color: #22863a;
 }
 
-.chroma .sb {
-  color: #032f62;
-}
-
-.chroma .sc {
-  color: #032f62;
-}
-
-.chroma .dl {
-  color: #032f62;
-}
-
-.chroma .sd {
-  color: #032f62;
-}
-
-.chroma .s2 {
-  color: #032f62;
-}
-
-.chroma .se {
-  color: #032f62;
-}
-
-.chroma .sh {
-  color: #032f62;
-}
-
-.chroma .si {
-  color: #032f62;
-}
-
-.chroma .sx {
-  color: #032f62;
-}
-
-.chroma .sr {
-  color: #032f62;
-}
-
-.chroma .s1 {
-  color: #032f62;
-}
-
+.chroma .s,
+.chroma .sa,
+.chroma .sb,
+.chroma .sc,
+.chroma .dl,
+.chroma .sd,
+.chroma .s2,
+.chroma .se,
+.chroma .sh,
+.chroma .si,
+.chroma .sx,
+.chroma .sr,
+.chroma .s1,
 .chroma .ss {
   color: #032f62;
 }
 
-.chroma .m {
-  color: #005cc5;
-}
-
-.chroma .mb {
-  color: #005cc5;
-}
-
-.chroma .mf {
-  color: #005cc5;
-}
-
-.chroma .mh {
-  color: #005cc5;
-}
-
-.chroma .mi {
-  color: #005cc5;
-}
-
-.chroma .il {
-  color: #005cc5;
-}
-
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .il,
 .chroma .mo {
   color: #005cc5;
 }
 
-.chroma .o {
-  color: #333;
-}
-
-.chroma .ow {
-  color: #333;
-}
-
-.chroma .c {
-  color: #6a737d;
-}
-
-.chroma .ch {
-  color: #6a737d;
-}
-
-.chroma .cm {
-  color: #6a737d;
-}
-
-.chroma .c1 {
-  color: #6a737d;
-}
-
-.chroma .cs {
-  color: #6a737d;
-}
-
-.chroma .cp {
-  color: #6a737d;
-}
-
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs,
+.chroma .cp,
 .chroma .cpf {
   color: #6a737d;
-}
-
-.chroma .gd {
-  color: #d70;
 }
 
 .chroma .ge {
   font-style: italic;
 }
 
-.chroma .gr {
-  color: #d70;
-}
-
-.chroma .gh {
-  color: #000;
-}
-
-.chroma .gi {
-  color: #d70;
-}
-
-.chroma .go {
-  color: #d70;
-}
-
-.chroma .gp {
-  color: #d70;
-}
-
 .chroma .gs {
   font-weight: bold;
 }
 
+.chroma .gh,
 .chroma .gu {
   color: #000;
 }
 
-.chroma .gt {
+.chroma .gd,
+.chroma .gr,
+.chroma .gi,
+.chroma .go,
+.chroma .gp,
+.chroma .gt,
+.chroma .x {
   color: #d70;
 }
 
-.chroma .w {
-  color: #d70;
+.chroma .ln {
+  margin-right: 0.4em;
+  padding: 0 0.4em;
 }
