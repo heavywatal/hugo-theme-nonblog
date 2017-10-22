@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic%7CUbuntu+Mono:400,400italic,700,700italic">
 <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
 <link rel="stylesheet" href="{{ .Site.Params.base_path }}css/theme.css">
@@ -11,7 +12,6 @@
 <link rel="manifest" href="{{ .Site.Params.base_path }}manifest.json">
 <link rel="mask-icon" href="{{ .Site.Params.base_path }}safari-pinned-tab.svg"{{ with .Site.Params.theme_color }} color="{{ . }}"{{ end }}>
 {{ with .Site.Params.theme_color }}<meta name="theme-color" content="{{ . }}">{{ end }}
-<title>{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 {{ partial "ogp.html" . }}
 {{ .Hugo.Generator }}
