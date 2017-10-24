@@ -14,7 +14,7 @@
 {{ with .Site.Params.theme_color }}<meta name="theme-color" content="{{ . }}">{{ end }}
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 {{ partial "ogp.html" . }}
-{{ partial "twittercard.html" . }}
+{{ partialCached "twittercard.html" . }}
 {{ .Hugo.Generator }}
 {{ if .IsPage }}{{ partialCached "mathjax.html" . }}
 {{ if .Section }}{{ partial "breadcrumblist.html" . }}{{ end }}{{ end }}
