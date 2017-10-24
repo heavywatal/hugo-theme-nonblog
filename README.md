@@ -10,6 +10,9 @@ This is a minimal theme for non-blog websites with a hierarchical sidebar
 +++
 baseURL = "https://heavywatal.github.io/"
 theme = "nonblog"
+uglyURLs = true
+pygmentsCodefences = true
+pygmentsUseClasses = true
 googleAnalytics = "UA-***"
 
 [params]
@@ -20,8 +23,8 @@ logo_alt = "LOGO"
 theme_color = "#e08010"
 copyrights = "(ɔ) 2008 Watal M. Iwasaki"
 google_cse = "00*******************:***********"
-pygmentsCodefences = true
-pygmentsUseClasses = true
+og_image = "https://avatars.githubusercontent.com/heavywatal"
+twitter_site = "@heavywatal"
 
 [taxonomies]
 tag = "tags"
@@ -44,6 +47,8 @@ Front matter
 title = "Seaborn"
 subtitle = "statistical data visualization"
 tags = ["python", "stats"]
+description = ""
+og_image = "https://example.com/image.jpg"
 [menu.main]
   parent = "python"
 +++

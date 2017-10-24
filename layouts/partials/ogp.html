@@ -1,2 +1,6 @@
+<meta property="og:title" content="{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-{{ with .Site.Params.og_image }}<meta property="og:image" content="{{ . }}">{{ end }}
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $.Param "og_image" }}">
+<meta property="og:description" content="{{ .Description }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
-<head>
+<head prefix="og: http://ogp.me/ns#">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
@@ -14,6 +14,7 @@
 {{ with .Site.Params.theme_color }}<meta name="theme-color" content="{{ . }}">{{ end }}
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 {{ partial "ogp.html" . }}
+{{ partial "twittercard.html" . }}
 {{ .Hugo.Generator }}
 {{ if .IsPage }}{{ partialCached "mathjax.html" . }}
 {{ if .Section }}{{ partial "breadcrumblist.html" . }}{{ end }}{{ end }}
