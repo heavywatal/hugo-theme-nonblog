@@ -129,7 +129,7 @@ article a:hover {
 pre,
 code,
 kbd {
-  font-family: "SFMono-Regular", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  font-family: Menlo, Consolas, "DejaVu Sans Mono", monospace;
 }
 
 code {
