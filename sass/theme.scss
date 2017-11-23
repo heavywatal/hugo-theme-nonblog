@@ -41,7 +41,7 @@ body {
   color: #444;
   background-color: #eee;
   font-family: $sans-serif;
-  line-height: 1.4;
+  line-height: 1.44;
 }
 
 header {
@@ -119,14 +119,25 @@ article {
     font-size: 1.4rem;
     background-color: #e8e8e8;
     border-left: solid 8px #aaa;
-    margin: 32px 0 12px;
+    margin: 32px 0 12px -8px;
     padding: 6px 8px;
     font-weight: normal;
   }
 
   h3 {
     font-size: 1.2rem;
+    border-left: solid 6px #ccc;
     border-bottom: solid 2px #ccc;
+    margin: 24px 0 8px -6px;
+    padding: 4px 6px;
+    font-weight: normal;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    border-left: solid 5px #ccc;
+    margin: 18px 0 0 -5px;
+    padding: 3px 5px;
     font-weight: normal;
   }
 
