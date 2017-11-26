@@ -9,6 +9,6 @@
   "repository": "https://github.com/heavywatal/hugo-theme-nonblog.git",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.7.2"
   }
 }
