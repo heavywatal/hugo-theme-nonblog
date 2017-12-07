@@ -18,6 +18,7 @@
 
 @media print {
   body {
+    background: none;
     color: #000;
     font-size: 0.8rem;
   }
@@ -29,6 +30,7 @@
   main {
     margin: 0;
     width: 100%;
+    max-width: none;
     box-shadow: none;
   }
 }

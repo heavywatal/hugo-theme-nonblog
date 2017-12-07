@@ -490,6 +490,7 @@ blockquote::before {
 
 @media print {
   body {
+    background: none;
     color: #000;
     font-size: 0.8rem;
   }
@@ -499,6 +500,7 @@ blockquote::before {
   main {
     margin: 0;
     width: 100%;
+    max-width: none;
     box-shadow: none;
   }
 }
