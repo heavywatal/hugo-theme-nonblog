@@ -13,6 +13,12 @@
     overflow: hidden;
   }
 
+  a {
+    padding: 5px 13px;
+    color: inherit;
+    display: block;
+  }
+
   div {
     padding: 0;
 
@@ -20,12 +26,6 @@
       padding: 10px 6px;
       font-size: 1.1rem;
     }
-  }
-
-  a {
-    padding: 5px 13px;
-    color: inherit;
-    display: block;
   }
 
   label {

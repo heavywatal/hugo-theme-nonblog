@@ -44,6 +44,11 @@ body {
   line-height: 1.44;
 }
 
+a {
+  color: $color-link;
+  text-decoration: none;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -78,11 +83,6 @@ ol {
   padding-left: 1.8rem;
 }
 
-a {
-  color: $color-link;
-  text-decoration: none;
-}
-
 main,
 .menu {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
@@ -111,10 +111,6 @@ article {
     }
   }
 
-  header + h2 {
-    margin-top: 18px;
-  }
-
   h2 {
     font-size: 1.4rem;
     background-color: #e8e8e8;
@@ -122,6 +118,10 @@ article {
     margin: 32px 0 12px -8px;
     padding: 6px 8px;
     font-weight: normal;
+  }
+
+  header + h2 {
+    margin-top: 18px;
   }
 
   h3 {

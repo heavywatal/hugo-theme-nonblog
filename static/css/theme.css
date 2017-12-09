@@ -37,6 +37,11 @@ body {
   line-height: 1.44;
 }
 
+a {
+  color: #429131;
+  text-decoration: none;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -71,11 +76,6 @@ ol {
   padding-left: 1.8rem;
 }
 
-a {
-  color: #429131;
-  text-decoration: none;
-}
-
 main,
 .menu {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
@@ -103,10 +103,6 @@ article header h1 {
   border: none;
 }
 
-article header + h2 {
-  margin-top: 18px;
-}
-
 article h2 {
   font-size: 1.4rem;
   background-color: #e8e8e8;
@@ -114,6 +110,10 @@ article h2 {
   margin: 32px 0 12px -8px;
   padding: 6px 8px;
   font-weight: normal;
+}
+
+article header + h2 {
+  margin-top: 18px;
 }
 
 article h3 {
@@ -292,6 +292,12 @@ blockquote::before {
   overflow: hidden;
 }
 
+.menu a {
+  padding: 5px 13px;
+  color: inherit;
+  display: block;
+}
+
 .menu div {
   padding: 0;
 }
@@ -299,12 +305,6 @@ blockquote::before {
 .menu div > a {
   padding: 10px 6px;
   font-size: 1.1rem;
-}
-
-.menu a {
-  padding: 5px 13px;
-  color: inherit;
-  display: block;
 }
 
 .menu label {
