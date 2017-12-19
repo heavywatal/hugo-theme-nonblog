@@ -4,11 +4,11 @@
 <header><h1><a href="{{ .URL }}">
 {{ .Title }}{{ with .Params.subtitle }} — {{ . }}{{ end }}
 </a></h1>
-<ul class="tags">
+<nav class="tags"><ul>
 {{ range .Params.tags -}}
 <li><a href="{{ $.Site.Params.base_path }}tags/{{ . | urlize }}{{ if $.Site.Params.uglyURLs }}.html{{ end }}">{{ . }}</a></li>
 {{ end -}}
-</ul>
+</ul></nav>
 </header>
 {{ if .Params.toc }}{{ .TableOfContents }}{{ end }}
 {{ .Content }}

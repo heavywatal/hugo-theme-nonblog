@@ -222,6 +222,10 @@ blockquote::before {
   margin: 0 0 0 auto;
 }
 
+.tags ul {
+  margin: 0;
+}
+
 .tags li,
 .terms dt {
   display: inline-block;
