@@ -4,12 +4,16 @@
 <header><h1><a href="{{ .URL }}">
 {{ .Title }}
 </a></h1></header>
-<dl class="terms">{{ range $key, $weighted_pages := .Data.Terms }}
+<dl class="terms">
+{{ range $key, $weighted_pages := .Data.Terms -}}
 <dt><a href="{{ $.Site.Params.base_path }}{{ $.Data.Plural }}/{{ $key }}">{{ $key }}</a></dt>
-<dd><ul>{{ range $page := $weighted_pages.Pages }}
-  <li><a href="{{ .RelPermalink }}">{{ $page.Title }}</a></li>{{ end }}
+<dd><ul>
+  {{- range $page := $weighted_pages.Pages }}
+  <li><a href="{{ .RelPermalink }}">{{ $page.Title }}</a></li>
+  {{- end }}
 </ul><dd>
-{{ end }}</dl>
+{{ end -}}
+</dl>
 </article>
 </main>
 {{ partial "nav.html" . }}

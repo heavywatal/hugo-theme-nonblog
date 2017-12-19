@@ -12,19 +12,25 @@
 <link rel="mask-icon" href="{{ .Site.Params.base_path }}safari-pinned-tab.svg"{{ with .Site.Params.theme_color }} color="{{ . }}"{{ end }}>
 {{ with .Site.Params.theme_color }}<meta name="theme-color" content="{{ . }}">{{ end }}
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-{{ partial "ogp.html" . }}
-{{ partialCached "twittercard.html" . }}
+{{ partial "ogp.html" . -}}
+{{ partialCached "twittercard.html" . -}}
 {{ .Hugo.Generator }}
-{{ if .IsPage }}{{ partialCached "mathjax.html" . }}
-{{ if .Section }}{{ partial "breadcrumblist.html" . }}{{ end }}{{ end }}
+{{ if .IsPage }}
+  {{- partialCached "mathjax.html" . }}
+  {{- if .Section }}{{ partial "breadcrumblist.html" . }}{{ end }}
+{{ end -}}
 {{ template "_internal/google_analytics.html" . }}
 </head>
 <body>
 <header><h1><a href="{{ .Site.Params.base_path }}">
-{{ with .Site.Params.logo_src }}<img class="logo" src="{{ $.Site.Params.base_path }}{{ . }}" alt="{{ $.Site.Params.logo_alt }}">{{ end }}
+{{ with .Site.Params.logo_src -}}
+<img class="logo" src="{{ $.Site.Params.base_path }}{{ . }}" alt="{{ $.Site.Params.logo_alt }}">
+{{ end -}}
 {{ .Site.Title }}
 </a></h1>
-{{ with .Site.Params.google_cse }}<form class="cse-search-box" action="/search.html">
+{{ with .Site.Params.google_cse -}}
+<form class="cse-search-box" action="/search.html">
 <label><i class="fa fa-fw fa-search"></i><input type="text" name="q" aria-label="cse-search-box" required></label>
-</form>{{ end }}
+</form>
+{{ end -}}
 </header>
