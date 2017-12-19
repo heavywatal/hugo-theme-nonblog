@@ -6,7 +6,7 @@
 </a></h1>
 <nav class="tags"><ul>
 {{ range .Params.tags -}}
-<li><a href="{{ $.Site.Params.base_path }}tags/{{ . | urlize }}{{ if $.Site.Params.uglyURLs }}.html{{ end }}">{{ . }}</a></li>
+<li><i class="fas fa-tag"></i> <a href="{{ $.Site.Params.base_path }}tags/{{ . | urlize }}{{ if $.Site.Params.uglyURLs }}.html{{ end }}">{{ . }}</a></li>
 {{ end -}}
 </ul></nav>
 </header>

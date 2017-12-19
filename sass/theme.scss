@@ -249,12 +249,6 @@ blockquote {
 
   a {
     color: inherit;
-
-    &::before {
-      font-family: FontAwesome;
-      content: "\f02b ";
-      margin-right: 0.2em;
-    }
   }
 }
 

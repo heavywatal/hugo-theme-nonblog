@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="{{ .Site.Params.base_path }}css/theme.css">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.base_path }}apple-touch-icon.png">
 <link rel="icon" type="image/png" href="{{ .Site.Params.base_path }}favicon-32x32.png" sizes="32x32">
@@ -19,6 +18,9 @@
   {{- partialCached "mathjax.html" . }}
   {{- if .Section }}{{ partial "breadcrumblist.html" . }}{{ end }}
 {{ end -}}
+<script src="https://use.fontawesome.com/releases/v5.0.1/js/brands.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.1/js/solid.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.1/js/fontawesome.js"></script>
 {{ template "_internal/google_analytics.html" . }}
 </head>
 <body>
@@ -30,7 +32,7 @@
 </a></h1>
 {{ with .Site.Params.google_cse -}}
 <form class="cse-search-box" action="/search.html">
-<label><i class="fa fa-fw fa-search"></i><input type="text" name="q" aria-label="cse-search-box" required></label>
+<label><i class="fas fa-fw fa-search"></i><input type="text" name="q" aria-label="cse-search-box" required></label>
 </form>
 {{ end -}}
 </header>
