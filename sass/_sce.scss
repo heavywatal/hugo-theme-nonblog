@@ -7,8 +7,8 @@
     width: 10em;
     background: #fff;
 
-    &:invalid {
-      background: #fff url(https://www.google.com/cse/static/en/google_custom_search_watermark.gif) left no-repeat;
+    &:not(:focus) {
+      background: #fff url("/google_custom_search_watermark.zopfli.png") left no-repeat;
     }
   }
 }
