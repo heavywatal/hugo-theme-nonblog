@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Yu Gothic";
+  font-family: "Yu Gothic Medium";
   src: local("Yu Gothic Medium");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "Yu Gothic";
+  font-family: "Yu Gothic Medium";
   src: local("Yu Gothic Bold");
   font-weight: bold;
 }
@@ -33,7 +33,7 @@ body {
   padding: 0 16px;
   color: #444;
   background-color: #eee;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Helvetica, "Yu Gothic", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Helvetica, "Yu Gothic Medium", sans-serif;
   line-height: 1.44;
 }
 
