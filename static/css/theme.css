@@ -252,6 +252,23 @@ blockquote::before {
   margin: 0 10px;
 }
 
+.github,
+.amazon {
+  color: #444;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+a svg:hover {
+  transform: scale(1.3);
+}
+
 .readmore {
   padding: 3px 30px 3px 20px;
   border-radius: 4px;
@@ -262,7 +279,7 @@ blockquote::before {
 }
 
 .readmore:hover {
-  background-color: #429131;
+  background-color: #444;
   text-decoration: none;
 }
 

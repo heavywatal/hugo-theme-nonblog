@@ -1,4 +1,5 @@
 @charset "UTF-8";
+$color-text:    #444;
 $color-link:    #429131;
 $color-theme:   #e08010;
 $color-note:    #e08010;
@@ -38,7 +39,7 @@ body {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 16px;
-  color: #444;
+  color: $color-text;
   background-color: #eee;
   font-family: $sans-serif;
   line-height: 1.44;
@@ -264,6 +265,23 @@ blockquote {
   }
 }
 
+.github,
+.amazon {
+  color: $color-text;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+a svg:hover {
+  transform: scale(1.3);
+}
+
 .readmore {
   padding: 3px 30px 3px 20px;
   border-radius: 4px;
@@ -273,7 +291,7 @@ blockquote {
   position: relative;
 
   &:hover {
-    background-color: $color-link;
+    background-color: $color-text;
     text-decoration: none;
   }
 
