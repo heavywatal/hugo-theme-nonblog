@@ -14,16 +14,18 @@ uglyURLs = true
 pygmentsCodefences = true
 pygmentsUseClasses = true
 googleAnalytics = "UA-***"
+copyright = "(ɔ) 2008 Watal M. Iwasaki"
+
+[author]
+name = "Watal M. Iwasaki"
+twitter = "@heavywatal"
 
 [params]
-author = "Watal M. Iwasaki"
 logo_src = "heavywatal.svg"
 logo_alt = "LOGO"
 theme_color = "#e08010"
-copyrights = "(ɔ) 2008 Watal M. Iwasaki"
 google_cse = "00*******************:***********"
 og_image = "https://avatars.githubusercontent.com/heavywatal"
-twitter_site = "@heavywatal"
 
 [taxonomies]
 tag = "tags"

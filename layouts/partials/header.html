@@ -10,7 +10,7 @@
 <link rel="manifest" href="{{ "manifest.json" | relURL }}">
 <link rel="mask-icon" href="{{ "safari-pinned-tab.svg" | relURL }}"{{ with .Site.Params.theme_color }} color="{{ . }}"{{ end }}>
 {{ with .Site.Params.theme_color }}<meta name="theme-color" content="{{ . }}">{{ end }}
-{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+{{ with .Site.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
 {{ partial "ogp.html" . -}}
 {{ partialCached "twittercard.html" . -}}
 {{ .Hugo.Generator }}
