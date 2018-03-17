@@ -6,7 +6,7 @@
 </a></h1></header>
 <dl class="terms">
 {{ range $key, $weighted_pages := .Data.Terms -}}
-<dt><i class="fas fa-tag"></i> <a href="{{ $.Site.Params.base_path }}{{ $.Data.Plural }}/{{ $key }}">{{ $key }}</a></dt>
+<dt><i class="fas fa-tag"></i> <a href="{{ $.Data.Plural | relURL }}/{{ $key }}">{{ $key }}</a></dt>
 <dd><ul>
   {{- range $page := $weighted_pages.Pages }}
   <li><a href="{{ .RelPermalink }}">{{ $page.Title }}</a></li>

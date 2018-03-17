@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
-<link rel="stylesheet" href="{{ .Site.Params.base_path }}css/theme.css">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.base_path }}apple-touch-icon.png">
-<link rel="icon" type="image/png" href="{{ .Site.Params.base_path }}favicon-32x32.png" sizes="32x32">
-<link rel="manifest" href="{{ .Site.Params.base_path }}manifest.json">
-<link rel="mask-icon" href="{{ .Site.Params.base_path }}safari-pinned-tab.svg"{{ with .Site.Params.theme_color }} color="{{ . }}"{{ end }}>
+<link rel="stylesheet" href="{{ "css/theme.css" | relURL }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
+<link rel="icon" type="image/png" href="{{ "favicon-32x32.png" | relURL }}" sizes="32x32">
+<link rel="manifest" href="{{ "manifest.json" | relURL }}">
+<link rel="mask-icon" href="{{ "safari-pinned-tab.svg" | relURL }}"{{ with .Site.Params.theme_color }} color="{{ . }}"{{ end }}>
 {{ with .Site.Params.theme_color }}<meta name="theme-color" content="{{ . }}">{{ end }}
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 {{ partial "ogp.html" . -}}
@@ -22,9 +22,9 @@
 {{ template "_internal/google_analytics.html" . }}
 </head>
 <body>
-<header><h1><a href="{{ .Site.Params.base_path }}">
+<header><h1><a href="{{ "/" | relURL }}">
 {{ with .Site.Params.logo_src -}}
-<img class="logo" src="{{ $.Site.Params.base_path }}{{ . }}" alt="{{ $.Site.Params.logo_alt }}">
+<img class="logo" src="{{ . | relURL }}" alt="{{ $.Site.Params.logo_alt }}">
 {{ end -}}
 {{ .Site.Title }}
 </a></h1>

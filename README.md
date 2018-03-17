@@ -17,7 +17,6 @@ googleAnalytics = "UA-***"
 
 [params]
 author = "Watal M. Iwasaki"
-base_path = "/"
 logo_src = "heavywatal.svg"
 logo_alt = "LOGO"
 theme_color = "#e08010"
