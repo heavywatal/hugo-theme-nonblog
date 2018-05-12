@@ -1,5 +1,4 @@
 {{ define "main" }}
-<main>
 <article>
 <header><h1><a href="{{ .URL }}">
 {{ .Title }}{{ with .Params.subtitle }} — {{ . }}{{ end }}
@@ -13,5 +12,4 @@
 {{ if .Params.toc }}{{ .TableOfContents }}{{ end }}
 {{ .Content }}
 </article>
-</main>
 {{ end }}

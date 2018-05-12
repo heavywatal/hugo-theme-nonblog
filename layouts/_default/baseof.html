@@ -34,8 +34,8 @@
 </form>
 {{ end -}}
 </header>
-{{ block "main" . -}}
-{{ end -}}
+<main>{{ block "main" . -}}{{ end -}}
+</main>
 {{ $node := . }}
 <nav class="menu">
 {{ range .Site.Menus.main -}}
