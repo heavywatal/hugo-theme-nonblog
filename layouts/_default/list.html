@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 <main>
 <article>
 <header>{{ with .Data.Plural }}<a href="{{ . | relURL }}">{{.}}</a> / {{ end }}<h1>
@@ -11,5 +11,4 @@
 </ul>
 </article>
 </main>
-{{ partial "nav.html" . }}
-{{ partialCached "footer.html" . }}
+{{ end }}
