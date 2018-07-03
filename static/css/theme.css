@@ -11,11 +11,12 @@
   font-weight: bold;
 }
 
-* {
-  box-sizing: border-box;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 html {
+  box-sizing: border-box;
   overflow-y: scroll;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
