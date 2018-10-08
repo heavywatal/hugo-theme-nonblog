@@ -19,7 +19,9 @@ $monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace;
   font-weight: bold;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
