@@ -14,7 +14,7 @@
 {{ partialCached "twittercard.html" . -}}
 {{ .Hugo.Generator }}
 {{ if .IsPage }}
-  {{- partialCached "mathjax.html" . }}
+  {{- partialCached "katex.html" . }}
   {{- if .Section }}{{ partial "breadcrumblist.html" . }}{{ end }}
 {{ end -}}
 {{ partialCached "fontawesome.html" . -}}
