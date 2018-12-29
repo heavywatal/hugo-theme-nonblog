@@ -179,12 +179,13 @@ pre {
 kbd {
   display: inline-block;
   vertical-align: middle;
-  font-size: 0.75rem;
-  padding: 1px 4px;
+  font-size: 0.7em;
+  padding: 1px 5px;
   margin: -4px 2px 0 0;
-  box-shadow: 1px 1px 1px #808080;
+  box-shadow: 0 -1px 0 #aaa inset;
   border: solid 1px #ccc;
   border-radius: 3px;
+  background: #fcfcfc;
 }
 
 dl {
