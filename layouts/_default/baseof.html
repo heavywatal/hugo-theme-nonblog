@@ -12,7 +12,7 @@
 {{ with .Site.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
 {{ partial "ogp.html" . -}}
 {{ partialCached "twittercard.html" . -}}
-{{ .Hugo.Generator }}
+{{ hugo.Generator }}
 {{ if .IsPage }}
   {{- partialCached "katex.html" . }}
   {{- if .Section }}{{ partial "breadcrumblist.html" . }}{{ end }}
