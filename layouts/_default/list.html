@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article>
 <header>{{ with .Data.Plural }}<a href="{{ . | relURL }}">{{.}}</a> / {{ end }}<h1>
-<a href="{{ .URL }}">{{ .Title }}</a>
+<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 </h1></header>
 <ul>
 {{ range .Data.Pages -}}
