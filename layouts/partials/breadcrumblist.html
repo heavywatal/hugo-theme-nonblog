@@ -4,12 +4,9 @@
 "itemListElement": [
  {"@type": "ListItem",
   "position": 1,
-  "item": {
-   "@id": "{{ delimit (slice .Site.BaseURL .Section ".html") "" }}",
-   "name": "{{ .Section }}"}},
+  {{ $sectionURL := (delimit (slice .Site.BaseURL .Section ".html") "") -}}
+  "item": {{ dict "@id" $sectionURL "name" .Section }} },
  {"@type": "ListItem",
   "position": 2,
-  "item": {
-   "@id": "{{ .Permalink }}",
-   "name": "{{ .Title | safeHTML }}"}}
+  "item": {{ dict "@id" .Permalink "name" .Title }}Z }
 ]}</script>
