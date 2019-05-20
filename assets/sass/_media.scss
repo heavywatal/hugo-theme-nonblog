@@ -17,10 +17,13 @@
 }
 
 @media print {
+  html {
+    font-size: 70%;
+  }
+
   body {
     background: none;
     color: #000;
-    font-size: 0.8rem;
   }
 
   nav {
