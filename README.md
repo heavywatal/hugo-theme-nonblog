@@ -1,4 +1,4 @@
-# nonblog
+# hugo-theme-nonblog
 
 This is a minimal theme for non-blog websites with a hierarchical sidebar
 
@@ -9,7 +9,7 @@ This is a minimal theme for non-blog websites with a hierarchical sidebar
 ```toml
 +++
 baseURL = "https://heavywatal.github.io/"
-theme = "nonblog"
+theme = "hugo-theme-nonblog"
 uglyURLs = true
 pygmentsCodefences = true
 pygmentsUseClasses = true
