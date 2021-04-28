@@ -177,13 +177,8 @@ article {
   }
 }
 
-pre,
-code,
-kbd {
-  font-family: var(--monospace);
-}
-
 code {
+  font-family: var(--monospace);
   background-color: #f7f7f7;
   background-color: rgba(0, 0, 0, 0.05);
   padding: 2px 4px;
@@ -191,6 +186,7 @@ code {
 }
 
 pre {
+  font-family: var(--monospace);
   background-color: #f6f8fa;
   padding: 8px;
   margin: -4px 0 20px;
@@ -206,6 +202,7 @@ pre {
 kbd {
   display: inline-block;
   vertical-align: middle;
+  font-family: var(--sans-serif);
   font-size: 0.7em;
   padding: 1px 5px;
   margin: -4px 2px 0 0;
