@@ -21,6 +21,7 @@
 .warning {
   @include box-base;
 
+  $color-warning: #a4321a;
   background-color: lighten($color-warning, 57%);
 
   &::before {
@@ -32,6 +33,7 @@
 .note {
   @include box-base;
 
+  $color-note: #e08010;
   background-color: lighten($color-note, 49%);
 
   &::before {

@@ -1,9 +1,7 @@
 @charset "UTF-8";
-$color-link:    #429131;
-$color-note:    #e08010;
-$color-warning: #a4321a;
 
 :root {
+  --color-link: #429131;
   --color-text: #444;
   --serif: Palatino, serif;
   --sans-serif: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Helvetica, "Yu Gothic Medium", sans-serif;
@@ -52,7 +50,7 @@ body {
 }
 
 a {
-  color: $color-link;
+  color: var(--color-link);
   text-decoration: none;
 }
 

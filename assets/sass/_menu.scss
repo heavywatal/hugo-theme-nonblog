@@ -43,7 +43,7 @@
     }
 
     &.active::after {
-      color: $color-link;
+      color: var(--color-link);
     }
   }
 
@@ -74,14 +74,15 @@
 
   .active {
     font-weight: bold;
-    color: $color-link;
-    border-color: $color-link;
+    color: var(--color-link);
+    border-color: var(--color-link);
   }
 
   label:hover,
   a:hover {
     cursor: pointer;
-    color: $color-link;
-    background-color: lighten($color-link, 60%);
+    color: var(--color-link);
+    background-color: #fff;
+    box-shadow: 0 0 6px #fff;
   }
 }
