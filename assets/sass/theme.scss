@@ -3,9 +3,10 @@
 :root {
   --color-link: #429131;
   --color-text: #444;
-  --serif: Palatino, serif;
-  --sans-serif: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Helvetica, "Yu Gothic Medium", "Source Han Sans", "Source Han Sans JP", sans-serif;
-  --monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  --emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans Emoji";
+  --serif: Palatino, serif, var(--emoji);
+  --sans-serif: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Helvetica, "Yu Gothic Medium", "Source Han Sans JP", sans-serif, var(--emoji);
+  --monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace, var(--emoji);
 }
 
 @font-face {
