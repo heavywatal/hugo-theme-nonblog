@@ -3,4 +3,4 @@ min = "0.63.0"
 extended = true
 
 [[module.imports]]
-path = "hugo-mod-common"
+path = "github.com/heavywatal/hugo-mod-common"
