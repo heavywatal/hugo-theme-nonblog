@@ -86,7 +86,14 @@ footer {
 
 ul,
 ol {
-  padding-left: 1.8rem;
+  padding-inline-start: 1.7rem;
+}
+
+li {
+  margin-block: 0.2em;
+  p {
+    margin-block: 0.5em;
+  }
 }
 
 main,
@@ -100,10 +107,6 @@ main {
   max-width: calc(100% - 216px);
   order: 2;
   padding: 24px;
-
-  li {
-    margin: 0.2rem 0;
-  }
 }
 
 article {
@@ -116,15 +119,13 @@ article {
       margin: 0;
       font-size: 1.4rem;
       font-weight: bold;
-      background: none;
-      border: none;
     }
   }
 
   h2 {
     font-size: 1.4rem;
     background-color: #e8e8e8;
-    margin: 32px 0 12px;
+    margin-block: 1.2em 0.8em;
     padding: 6px 10px;
     font-weight: normal;
     position: relative;
@@ -141,14 +142,14 @@ article {
   }
 
   header + h2 {
-    margin-top: 18px;
+    margin-block-start: 1em;
   }
 
   h3 {
     font-size: 1.2rem;
     border-bottom: solid 2px #ccc;
-    margin: 24px 0 8px;
-    padding: 4px 0;
+    margin-block: 1.2em 0.8em;
+    padding-block: 4px;
     font-weight: normal;
     position: relative;
     &::before {
@@ -165,10 +166,20 @@ article {
 
   h4 {
     font-size: 1.1rem;
-    border-left: solid 5px #ccc;
-    margin: 18px 0 0 -5px;
-    padding: 3px 5px;
+    margin-block: 1.2em 0.8em;
+    padding-block: 3px;
     font-weight: normal;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -14px;
+      line-height: 1.6ex;
+      font-size: 0.6rem;
+      white-space: pre;
+      color: #ccc;
+      content: "#\A#\A#\A#";
+    }
   }
 
   a:hover {
@@ -187,8 +198,8 @@ code {
 pre {
   font-family: var(--monospace);
   background-color: #f6f8fa;
-  padding: 8px;
-  margin: -4px 0 20px;
+  padding: 6px 8px;
+  margin-block: 0.3em 1em;
   line-height: 1.4;
   overflow-x: auto;
 
@@ -204,7 +215,7 @@ kbd {
   font-family: var(--sans-serif);
   font-size: 0.7em;
   padding: 1px 5px;
-  margin: -4px 2px 0 0;
+  margin: -3px 2px 0 0;
   box-shadow: 0 -1px 0 #aaa inset;
   border: solid 1px #ccc;
   border-radius: 3px;
@@ -214,16 +225,25 @@ kbd {
 dl {
   dt {
     font-weight: bold;
-    padding: 2px 0 0;
+    margin-block-start: 1em;
   }
 
   dd {
-    margin: 0 0 4px 1.5rem;
-  }
-}
+    margin-block: 0.3em;
+    margin-inline: 1em 0;
+    position: relative;
 
-dd p {
-  margin-top: 6px;
+    p {
+      margin-block: 0.3em;
+    }
+
+    &::before {
+      content: ":";
+      color: #ccc;
+      position: absolute;
+      left: -0.8em;
+    }
+  }
 }
 
 table {
@@ -241,9 +261,10 @@ td {
 }
 
 blockquote {
-  margin: 8px 16px;
-  padding: 4px 12px 1px;
-  border-left: solid 4px #ccc;
+  margin: 8px 0;
+  padding-block: 4px 1px;
+  padding-inline: 24px 0;
+  border-left: solid 2px #ccc;
   position: relative;
 
   &::before {
@@ -252,13 +273,13 @@ blockquote {
     top: -10px;
     left: 8px;
     font-size: 2.4rem;
-    font-family: serif;
+    font-family: var(--serif);
     color: #999;
   }
 }
 
 .tags {
-  margin: 0 0 0 auto;
+  margin-inline-start: auto;
 
   ul {
     margin: 0;
@@ -282,13 +303,14 @@ blockquote {
 
 .terms {
   ul {
-    margin: 0 0 3ex;
+    margin: 0;
     padding: 0;
   }
 
   li {
     display: inline-block;
-    margin: 0 10px;
+    margin-block: 0;
+    margin-inline: 0 1.4em;
   }
 }
 
@@ -297,7 +319,8 @@ a svg:hover {
 }
 
 .readmore {
-  padding: 3px 30px 3px 20px;
+  padding-block: 4px;
+  padding-inline: 20px 30px;
   border-radius: 4px;
   font-weight: normal;
   color: #fff;
