@@ -1,15 +1,15 @@
 .cse-search-box {
-  margin: 16px 0 6px auto;
+  margin-block: 16px 0;
 
   input {
-    padding: 2px;
     font-size: 0.8rem;
-    width: 10em;
+    padding: 4px;
+    width: 100%;
     border: solid 1px #bbb;
     background: #fff;
 
     &:not(:focus) {
-      background: #fff url("/google_custom_search_watermark.zopfli.png") left no-repeat;
+      background: #fff url("/google_custom_search_watermark.zopfli.png") 2px center no-repeat;
     }
   }
 }

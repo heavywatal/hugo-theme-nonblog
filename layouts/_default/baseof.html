@@ -27,16 +27,12 @@
 {{ end -}}
 {{ .Site.Title }}
 </a></h1>
-{{ with .Site.Params.google_cse -}}
-<form class="cse-search-box" action="/search.html">
-<label><i class="fas fa-fw fa-search"></i><input type="text" name="q" aria-label="cse-search-box"></label>
-</form>
-{{ end -}}
 </header>
 <main>{{ block "main" . -}}{{ end -}}
 </main>
 {{ $node := . }}
-<nav class="menu">
+<nav class="side-bar">
+<div class="menu">
 {{ range .Site.Menus.main -}}
   {{- if .HasChildren }}
 <input type="checkbox" id="menu-{{ .Identifier }}"{{ if $node.HasMenuCurrent "main" . }} checked{{ end }}>
@@ -49,6 +45,12 @@
   {{- else }}
 <div{{ if $node.IsMenuCurrent "main" . }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></div>
   {{- end }}
+{{ end -}}
+</div>
+{{ with .Site.Params.google_cse -}}
+<form class="cse-search-box" action="/search.html">
+<label><input type="text" name="q" aria-label="cse-search-box"></label>
+</form>
 {{ end -}}
 </nav>
 <footer><small>{{ .Site.Copyright }}</small></footer>
