@@ -3,11 +3,11 @@
 <header><h1><a href="{{ .RelPermalink }}">
 {{ .Title }}{{ with .Params.subtitle }} — {{ . }}{{ end }}
 </a></h1>
-<nav class="tags"><ul>
+<nav class="tags">
 {{ range .Params.tags -}}
-<li><i class="fas fa-tag"></i> <a href="{{ "tags/" | relURL }}{{ . | urlize }}{{ if $.Site.Params.uglyURLs }}.html{{ end }}">{{ . }}</a></li>
+<a href="{{ "tags/" | relURL }}{{ . | urlize }}{{ if $.Site.Params.uglyURLs }}.html{{ end }}"><div>{{ . }}</div></a>
 {{ end -}}
-</ul></nav>
+</nav>
 </header>
 {{ if .Params.toc }}{{ .TableOfContents }}{{ end }}
 {{ .Content }}

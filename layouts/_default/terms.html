@@ -5,12 +5,12 @@
 </a></h1></header>
 <dl class="terms">
 {{ range $key, $weighted_pages := .Data.Terms -}}
-<dt><i class="fas fa-tag"></i> <a href="{{ $.Data.Plural | relURL }}/{{ $key }}">{{ $key }}</a></dt>
+<dt><a href="{{ $.Data.Plural | relURL }}/{{ $key }}"><div>{{ $key }}</div></a></dt>
 <dd><ul>
   {{- range $page := $weighted_pages.Pages }}
   <li><a href="{{ .RelPermalink }}">{{ $page.Title }}</a></li>
   {{- end }}
-</ul><dd>
+</ul></dd>
 {{ end -}}
 </dl>
 </article>

@@ -288,18 +288,22 @@ blockquote {
   }
 }
 
-.tags li,
-.terms dt {
+.tags div,
+.terms dt div {
   display: inline-block;
-  padding: 3px 6px;
-  border-radius: 4px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: normal;
+  padding: 1px 9px;
+  border-radius: 2em;
   color: #fff;
   background-color: #ccc;
 
   a {
     color: inherit;
+  }
+
+  &:hover {
+    background-color: var(--color-text);
   }
 }
 
