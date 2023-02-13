@@ -5,8 +5,11 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>{{ if not .IsHome }}{{ .Title }}{{ with .Params.subtitle }}: {{ . }}{{ end }} - {{ end }}{{ .Site.Title }}</title>
 {{ partialCached "sass.html" . -}}
-<link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
-<link rel="icon" type="image/png" href="{{ "favicon-32x32.png" | relURL }}" sizes="32x32">
+{{ with .Site.Params.logo_src -}}
+<link rel="icon" href="{{ . | relURL }}">
+{{ end -}}
+<link rel="icon" href="{{ "favicon.png" | relURL }}" sizes="32x32">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}" sizes="180x180">
 <link rel="manifest" href="{{ "manifest.json" | relURL }}">
 {{ with .Site.Params.theme_color }}<meta name="theme-color" content="{{ . }}">{{ end }}
 {{ with .Site.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
