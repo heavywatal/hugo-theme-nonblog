@@ -9,11 +9,9 @@ This is a minimal theme for non-blog websites with a hierarchical sidebar
 ```toml
 +++
 baseURL = "https://heavywatal.github.io/"
-theme = "hugo-theme-nonblog"
+title = "Heavy Watal"
 uglyURLs = true
-pygmentsCodefences = true
-pygmentsUseClasses = true
-googleAnalytics = "UA-***"
+googleAnalytics = "G-***"
 copyright = "(ɔ) 2008 Watal M. Iwasaki"
 
 [author]
@@ -22,10 +20,20 @@ twitter = "@heavywatal"
 
 [params]
 logo_src = "heavywatal.svg"
-logo_alt = "LOGO"
-theme_color = "#e08010"
+logo_alt = "heavywatal.svg"
+theme_color = "#eeeeee"
 google_cse = "00*******************:***********"
 og_image = "https://avatars.githubusercontent.com/heavywatal"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+noClasses = false
+
+[module]
+[[module.imports]]
+path = "github.com/heavywatal/hugo-theme-nonblog"
 
 [taxonomies]
 tag = "tags"
