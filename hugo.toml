@@ -1,7 +1,7 @@
 [module]
 [module.hugoVersion]
 extended = true
-max = "0.110.0"
+max = "0.199.0"
 min = "0.109.0"
 
 [[module.imports]]
