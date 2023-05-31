@@ -1,0 +1,67 @@
+@forward "sce";
+@forward "box";
+@forward "toc";
+
+.tags {
+  margin-inline-start: auto;
+
+  ul {
+    margin: 0;
+  }
+}
+
+.tags div,
+.terms dt div {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: normal;
+  padding: 1px 9px;
+  border-radius: 2em;
+  color: #fff;
+  opacity: 0.8;
+  background-color: #999;
+
+  a {
+    color: inherit;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.terms {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-block: 0;
+    margin-inline: 0 1.4em;
+  }
+}
+
+.readmore {
+  padding-block: 4px;
+  padding-inline: 20px 30px;
+  border-radius: 4px;
+  font-weight: normal;
+  color: #fff;
+  opacity: 0.8;
+  background-color: #999;
+  position: relative;
+
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  &::after {
+    content: "❯";
+    position: absolute;
+    right: 8px;
+    color: #fff;
+  }
+}

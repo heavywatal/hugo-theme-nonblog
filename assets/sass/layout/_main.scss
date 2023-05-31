@@ -1,0 +1,134 @@
+body {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  min-height: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px;
+  line-height: 1.5;
+}
+
+header {
+  width: 100%;
+
+  h1 {
+    margin: 10px 6px;
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .logo {
+    height: 32px;
+    vertical-align: text-bottom;
+    margin-right: 4px;
+  }
+}
+
+footer {
+  width: 100%;
+  color: #999;
+  padding: 12px 4px;
+  text-align: right;
+}
+
+main,
+.menu {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.side-bar {
+  width: 200px;
+}
+
+main {
+  background-color: #fff;
+  max-width: calc(100% - 216px);
+  width: 100%;
+  padding: 24px;
+}
+
+article {
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    background-color: #e8e8e8;
+    margin-block: 1.2em 0.8em;
+    padding: 6px 10px;
+    font-weight: normal;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 4px;
+      left: -18px;
+      line-height: 1.8ex;
+      font-size: 1.3rem;
+      white-space: pre;
+      color: #ccc;
+      content: "#\A#";
+    }
+  }
+
+  header + h2 {
+    margin-block-start: 1em;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    border-bottom: solid 2px #ccc;
+    margin-block: 1.2em 0.8em;
+    padding-block: 4px;
+    font-weight: normal;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -16px;
+      line-height: 1.7ex;
+      font-size: 0.9rem;
+      white-space: pre;
+      color: #ccc;
+      content: "#\A#\A#";
+    }
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    margin-block: 1.2em 0.8em;
+    padding-block: 3px;
+    font-weight: normal;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -14px;
+      line-height: 1.6ex;
+      font-size: 0.6rem;
+      white-space: pre;
+      color: #ccc;
+      content: "#\A#\A#\A#";
+    }
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

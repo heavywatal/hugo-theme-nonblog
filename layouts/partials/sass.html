@@ -1,4 +1,4 @@
-{{ $sass := resources.Get "sass/theme.scss" -}}
-{{ $options := (dict "targetPath" "css/theme.css" "outputStyle" "expanded") -}}
+{{ $sass := resources.Get "sass/style.scss" -}}
+{{ $options := (dict "targetPath" "css/theme.css" "outputStyle" "expanded" "transpiler" "dartsass") -}}
 {{ $style := $sass | resources.ToCSS $options -}}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
