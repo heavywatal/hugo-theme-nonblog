@@ -1,8 +1,7 @@
 [module]
 [module.hugoVersion]
-extended = true
 max = "0.199.0"
-min = "0.109.0"
+min = "0.114.0"
 
 [[module.imports]]
 path = "github.com/heavywatal/hugo-mod-common"
