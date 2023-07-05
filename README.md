@@ -22,7 +22,6 @@ twitter = "@heavywatal"
 logo_src = "heavywatal.svg"
 logo_alt = "heavywatal.svg"
 theme_color = "#eeeeee"
-google_cse = "00*******************:***********"
 og_image = "https://avatars.githubusercontent.com/heavywatal"
 
 [markup.goldmark.renderer]
