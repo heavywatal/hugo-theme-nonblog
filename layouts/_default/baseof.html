@@ -48,6 +48,9 @@
   {{- end }}
 {{ end -}}
 </div>
+<form action="{{ relref . `search` }}" id="search-form">
+<input type="search" name="q" placeholder="search">
+</form>
 </nav>
 <footer><small>{{ .Site.Copyright }}</small></footer>
 </body>

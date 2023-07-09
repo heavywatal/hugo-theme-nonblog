@@ -1,0 +1,12 @@
+{{- $local := newScratch }}
+{{- $local.Set "index" slice }}
+{{- range .Site.RegularPages }}
+  {{- $local.Add "index" (dict
+    "title" .Title
+    "href" .RelPermalink
+    "type" .Type
+    "tags" .Params.tags
+    "content" .Plain
+  ) }}
+{{- end }}
+{{- $local.Get "index" | jsonify (dict "indent" " ") }}

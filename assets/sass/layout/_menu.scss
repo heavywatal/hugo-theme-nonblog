@@ -85,3 +85,18 @@
     box-shadow: 0 0 6px #fff;
   }
 }
+
+#search-form {
+  margin-block: 16px 0;
+
+  input {
+    font-size: 0.88rem;
+    padding: 4px 6px;
+    width: 100%;
+    border: none;
+
+    &::placeholder {
+      opacity: 0.66;
+    }
+  }
+}

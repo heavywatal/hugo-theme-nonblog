@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{- $indexjson := relref . (dict "path" "search.json" "outputFormat" "json") }}
+{{- $opts := dict
+  "targetPath" "lib/search.js"
+  "params" (dict "index" $indexjson)
+  "minify" true
+}}
+{{- $js := resources.Get "js/search.js" | js.Build $opts }}
+<script defer src="{{ $js.RelPermalink }}"></script>
+<article>
+</article>
+{{ end }}
