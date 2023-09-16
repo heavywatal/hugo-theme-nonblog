@@ -12,13 +12,13 @@
 .tags div,
 .terms dt div {
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: normal;
   padding: 1px 9px;
   border-radius: 2em;
-  color: #fff;
-  opacity: 0.8;
-  background-color: #999;
+  color: var(--color-text);
+  opacity: 0.88;
+  background-color: #8885;
 
   a {
     color: inherit;
@@ -48,8 +48,8 @@
   border-radius: 4px;
   font-weight: normal;
   color: #fff;
-  opacity: 0.8;
-  background-color: #999;
+  opacity: 0.66;
+  background-color: #888;
   position: relative;
 
   &:hover {

@@ -34,14 +34,14 @@ header {
 
 footer {
   width: 100%;
-  color: #999;
+  color: #888c;
   padding: 12px 4px;
   text-align: right;
 }
 
 main,
-.menu {
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+.side-bar {
+  box-shadow: 2px 2px 12px #0003;
 }
 
 .side-bar {
@@ -49,7 +49,7 @@ main,
 }
 
 main {
-  background-color: #fff;
+  background-color: Canvas;
   max-width: calc(100% - 216px);
   width: 100%;
   padding: 24px;
@@ -70,19 +70,19 @@ article {
 
   h2 {
     font-size: 1.4rem;
-    background-color: #e8e8e8;
+    background: linear-gradient(to right, #8883, #8880);
     margin-block: 1.2em 0.8em;
-    padding: 6px 10px;
+    padding: 0.4rem 0.7rem;
     font-weight: normal;
     position: relative;
     &::before {
       position: absolute;
-      top: 4px;
-      left: -18px;
-      line-height: 1.8ex;
-      font-size: 1.3rem;
+      top: 0.2rem;
+      left: -1.1rem;
+      line-height: 1.1em;
+      font-size: 1.2rem;
       white-space: pre;
-      color: #ccc;
+      color: #8888;
       content: "#\A#";
     }
   }
@@ -93,37 +93,38 @@ article {
 
   h3 {
     font-size: 1.2rem;
-    border-bottom: solid 2px #ccc;
+    background: linear-gradient(to right, #8882, #8880 80%);
     margin-block: 1.2em 0.8em;
-    padding-block: 4px;
+    padding: 0.3rem 0.7rem;
     font-weight: normal;
     position: relative;
     &::before {
       position: absolute;
       top: 0;
-      left: -16px;
-      line-height: 1.7ex;
+      left: -1rem;
+      line-height: 0.9em;
       font-size: 0.9rem;
       white-space: pre;
-      color: #ccc;
+      color: #8888;
       content: "#\A#\A#";
     }
   }
 
   h4 {
     font-size: 1.1rem;
+    background: linear-gradient(to right, #8882, #8880 60%);
     margin-block: 1.2em 0.8em;
-    padding-block: 3px;
+    padding: 0.2rem 0.6rem;
     font-weight: normal;
     position: relative;
     &::before {
       position: absolute;
       top: 0;
-      left: -14px;
-      line-height: 1.6ex;
+      left: -0.9rem;
+      line-height: 0.82em;
       font-size: 0.6rem;
       white-space: pre;
-      color: #ccc;
+      color: #8888;
       content: "#\A#\A#\A#";
     }
   }

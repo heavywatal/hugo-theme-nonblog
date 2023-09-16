@@ -1,10 +1,17 @@
 :root {
+  color-scheme: light dark;
   --color-link: #429131;
   --color-text: #444;
   --emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans Emoji";
   --serif: Palatino, serif, var(--emoji);
   --sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Helvetica, "Yu Gothic Medium", "Source Han Sans JP", sans-serif, var(--emoji);
   --monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace, var(--emoji);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #bbb;
+  }
 }
 
 @font-face {
@@ -34,7 +41,7 @@ html {
 
 body {
   color: var(--color-text);
-  background-color: #eee;
+  background-color: #ccc4;
   font-family: var(--sans-serif);
 }
 
@@ -57,15 +64,15 @@ li {
 
 code {
   font-family: var(--monospace);
-  background-color: #f7f7f7;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #99999918;
   padding: 2px 4px;
   font-size: 0.85em;
 }
 
 pre {
   font-family: var(--monospace);
-  background-color: #f6f8fa;
+  box-shadow: inset 0 0 9px #9993;
+  background-color: #99999906;
   padding: 6px 8px;
   margin-block: 0.3em 1em;
   line-height: 1.4;
@@ -84,10 +91,9 @@ kbd {
   font-size: 0.7em;
   padding: 1px 5px;
   margin: -3px 2px 0 0;
-  box-shadow: 0 -1px 0 #aaa inset;
-  border: solid 1px #ccc;
+  box-shadow: inset 0 -1px 0 #8888;
+  border: solid 1px #8886;
   border-radius: 3px;
-  background: #fcfcfc;
 }
 
 dl {
@@ -107,7 +113,7 @@ dl {
 
     &::before {
       content: ":";
-      color: #ccc;
+      opacity: 0.25;
       position: absolute;
       left: -0.8em;
     }
@@ -115,12 +121,12 @@ dl {
 }
 
 table {
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px #8886;
   border-spacing: 4px;
 }
 
 thead {
-  background: #ddd;
+  background: #8883;
 }
 
 th,
@@ -132,7 +138,7 @@ blockquote {
   margin: 8px 0;
   padding-block: 4px 1px;
   padding-inline: 24px 0;
-  border-left: solid 2px #ccc;
+  border-left: solid 2px #8888;
   position: relative;
 
   &::before {
@@ -142,7 +148,7 @@ blockquote {
     left: 8px;
     font-size: 2.4rem;
     font-family: var(--serif);
-    color: #999;
+    color: #888c;
   }
 }
 

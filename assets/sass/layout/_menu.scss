@@ -1,5 +1,5 @@
 .menu {
-  background-color: #fff;
+  background-color: Canvas;
   padding: 0;
 
   ul {
@@ -31,12 +31,13 @@
     position: relative;
     padding: 10px 6px;
     font-size: 1.1rem;
+    cursor: pointer;
 
     &::after {
       content: "❯";
       position: absolute;
       right: 8px;
-      color: #ccc;
+      color: #8886;
       transition: all 0.2s ease-out;
     }
 
@@ -60,7 +61,7 @@
   }
 
   li {
-    background: #f4f4f4;
+    background: #cccccc20;
     margin: 0;
   }
 
@@ -68,7 +69,7 @@
   label,
   li,
   label.active {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #8886;
   }
 
   .active {
@@ -77,12 +78,11 @@
     border-color: var(--color-link);
   }
 
+  div:hover,
   label:hover,
-  a:hover {
-    cursor: pointer;
-    color: var(--color-link);
-    background-color: #fff;
-    box-shadow: 0 0 6px #fff;
+  li:hover {
+    filter: brightness(1.1);
+    transform: scale(1.01);
   }
 }
 
