@@ -1,11 +1,11 @@
 @mixin box-base {
-  margin: 8px 0;
-  padding-block: 6px;
-  padding-inline: 40px 10px;
+  margin: 0.5rem 0;
+  padding-block: 0.4rem;
+  padding-inline: 2rem 1rem;
   position: relative;
 
   & > p {
-    margin: 4px 0;
+    margin: 0.25rem 0;
   }
 
   &::before {
@@ -15,30 +15,28 @@
     font-style: italic;
     display: inline-block;
     position: absolute;
-    left: 12px;
+    left: 0.7rem;
   }
 }
 
 .warning {
   @include box-base;
 
-  $color-warning: #a4321a;
-  background-color: lighten($color-warning, 57%);
+  background-color: #e322;
 
   &::before {
     content: "!";
-    color: $color-warning;
+    color: #a32;
   }
 }
 
 .note {
   @include box-base;
 
-  $color-note: #e08010;
-  background-color: lighten($color-note, 49%);
+  background-color: #1af2;
 
   &::before {
     content: "i";
-    color: $color-note;
+    color: #16c;
   }
 }
