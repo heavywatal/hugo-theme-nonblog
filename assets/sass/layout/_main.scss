@@ -50,7 +50,7 @@ main,
 }
 
 main {
-  background-color: Canvas;
+  background-color: var(--canvas);
   max-width: calc(100% - 216px);
   width: 100%;
   padding: 24px;

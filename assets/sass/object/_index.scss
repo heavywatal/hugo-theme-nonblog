@@ -16,13 +16,9 @@
   font-weight: normal;
   padding: 1px 9px;
   border-radius: 2em;
-  color: var(--color-text);
+  color: var(--canvas-text);
   opacity: 0.88;
   background-color: #8885;
-
-  a {
-    color: inherit;
-  }
 
   &:hover {
     opacity: 1;

@@ -1,7 +1,8 @@
 :root {
   color-scheme: light dark;
+  --canvas: #fff;
+  --canvas-text: #444;
   --color-link: #429131;
-  --color-text: #444;
   --emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans Emoji";
   --serif: Palatino, serif, var(--emoji);
   --sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Helvetica, "Yu Gothic Medium", "Source Han Sans JP", sans-serif, var(--emoji);
@@ -10,7 +11,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: #bbb;
+    --canvas: #000;
+    --canvas-text: #bbb;
   }
 }
 
@@ -40,7 +42,7 @@ html {
 }
 
 body {
-  color: var(--color-text);
+  color: var(--canvas-text);
   background-color: #ccc4;
   font-family: var(--sans-serif);
 }
