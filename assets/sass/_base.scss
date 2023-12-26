@@ -90,11 +90,6 @@ pre {
   }
 }
 
-// Workaround until Firefox supports :has()
-.highlight > pre {
-  margin-block-end: 0;
-}
-
 .highlight:has(+ pre) > pre {
   margin-block-end: 0;
 }
