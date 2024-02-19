@@ -1,5 +1,5 @@
 import params from '@params'
-import Fuse from './fuse.esm.min.js'
+import Fuse from './fuse.min.mjs'
 
 const searchQuery = new URLSearchParams(window.location.search).get('q') || ''
 const searchInput = document.getElementById('search-form').querySelector('input')
