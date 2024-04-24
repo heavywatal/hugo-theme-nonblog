@@ -5,7 +5,7 @@
   --color-link: #429131;
   --emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans Emoji";
   --serif: Palatino, serif, var(--emoji);
-  --sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Helvetica, "Yu Gothic Medium", "Source Han Sans JP", sans-serif, var(--emoji);
+  --sans-serif: "Segoe UI", "Yu Gothic Medium", system-ui, "HiraginoSans", sans-serif, var(--emoji);
   --monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace, var(--emoji);
 }
 
@@ -26,6 +26,20 @@
   font-family: "Yu Gothic Medium";
   src: local("Yu Gothic Bold");
   font-weight: bold;
+}
+
+@font-face {
+  font-family: "HiraginoSans";
+  src: local("HiraginoSans-W3");
+  font-weight: normal;
+  size-adjust: 92.3%;
+}
+
+@font-face {
+  font-family: "HiraginoSans";
+  src: local("HiraginoSans-W6");
+  font-weight: bold;
+  size-adjust: 92.3%;
 }
 
 *,
