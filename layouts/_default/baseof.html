@@ -19,7 +19,7 @@
   {{- partialCached "katex.html" . }}
   {{- if .Section }}{{ partial "breadcrumblist.html" . }}{{ end }}
 {{ end -}}
-{{ template "_internal/google_analytics.html" . }}
+{{ partialCached "google_analytics.html" . -}}
 </head>
 <body>
 <header><h1><a href="{{ "/" | relURL }}">
