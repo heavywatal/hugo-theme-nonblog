@@ -1,14 +1,17 @@
-@mixin box-base {
+@mixin box-base($content, $color, $bgcolor) {
   margin: 0.5rem 0;
   padding-block: 0.4rem;
   padding-inline: 2rem 1rem;
   position: relative;
+  background-color: $bgcolor;
 
   & > p {
     margin: 0.25rem 0;
   }
 
   &::before {
+    content: $content;
+    color: $color;
     font-family: "Ubuntu mono", monospace;
     font-size: 1.2rem;
     font-weight: bold;
@@ -20,23 +23,9 @@
 }
 
 .warning {
-  @include box-base;
-
-  background-color: #e322;
-
-  &::before {
-    content: "!";
-    color: #a32;
-  }
+  @include box-base("!", #a32, #e322);
 }
 
 .note {
-  @include box-base;
-
-  background-color: #1af2;
-
-  &::before {
-    content: "i";
-    color: #16c;
-  }
+  @include box-base("i", #16c, #1af2);
 }
