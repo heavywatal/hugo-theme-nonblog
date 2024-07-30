@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}" sizes="180x180">
 <link rel="manifest" href="{{ "manifest.json" | relURL }}">
 {{ with .Site.Params.theme_color }}<meta name="theme-color" content="{{ . }}">{{ end }}
-{{ with .Site.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
+{{ with $.Param "author.name" }}<meta name="author" content="{{ . }}">{{ end }}
 {{ partial "ogp.html" . -}}
 {{ partialCached "twittercard.html" . -}}
 {{ if .IsPage }}
