@@ -10,13 +10,9 @@ This is a minimal theme for non-blog websites with a hierarchical sidebar
 +++
 baseURL = "https://heavywatal.github.io/"
 title = "Heavy Watal"
+defaultContentLanguage = "ja"
 uglyURLs = true
-googleAnalytics = "G-***"
 copyright = "(ɔ) 2008 Watal M. Iwasaki"
-
-[author]
-name = "Watal M. Iwasaki"
-twitter = "@heavywatal"
 
 [params]
 logo_src = "heavywatal.svg"
@@ -24,11 +20,23 @@ logo_alt = "heavywatal.svg"
 theme_color = "#eeeeee"
 og_image = "https://avatars.githubusercontent.com/heavywatal"
 
+[params.author]
+name = "Watal M. Iwasaki"
+
+[params.social]
+twitter = "@heavywatal"
+
 [markup.goldmark.renderer]
 unsafe = true
 
+[markup.goldmark.extensions]
+strikethrough = false
+
 [markup.highlight]
 noClasses = false
+
+[services.googleAnalytics]
+ID = "G-***"
 
 [module]
 [[module.imports]]
