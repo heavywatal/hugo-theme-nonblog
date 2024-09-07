@@ -1,4 +1,8 @@
-{{ $sass := resources.Get "sass/style.scss" -}}
-{{ $options := (dict "targetPath" "css/style.css" "outputStyle" "expanded" "transpiler" "dartsass") -}}
-{{ $style := $sass | resources.ToCSS $options -}}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ $options := (dict
+  "transpiler" "dartsass"
+  "targetPath" "css/style.css"
+  "outputStyle" "expanded"
+) -}}
+{{ with resources.Get "sass/style.scss" | toCSS $options -}}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end -}}
