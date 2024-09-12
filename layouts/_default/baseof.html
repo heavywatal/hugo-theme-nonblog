@@ -16,7 +16,7 @@
 {{ partial "ogp.html" . -}}
 {{ partialCached "twittercard.html" . -}}
 {{ if .IsPage }}
-  {{- partialCached "katex.html" . }}
+  {{- partialCached "math.html" . ($.Param "math") }}
   {{- if .Section }}{{ partial "breadcrumblist.html" . }}{{ end }}
 {{ end -}}
 {{ partialCached "google_analytics.html" . -}}
