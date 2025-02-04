@@ -7,6 +7,7 @@ if (searchInput) searchInput.value = searchQuery
 const fuseOptions = {
   minMatchCharLength: searchQuery.length - 1,
   threshold: 0.2,
+  ignoreDiacritics: true,
   ignoreLocation: true,
   includeMatches: true,
   useExtendedSearch: true,
