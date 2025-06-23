@@ -13,14 +13,6 @@ body {
 }
 
 header {
-  width: 100%;
-
-  h1 {
-    margin: 10px 6px;
-    font-size: 1.2rem;
-    font-weight: normal;
-  }
-
   a {
     color: inherit;
   }
@@ -30,6 +22,12 @@ header {
     vertical-align: text-bottom;
     margin-right: 4px;
   }
+}
+
+body > header {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px 6px;
 }
 
 footer {
@@ -62,12 +60,12 @@ article {
     flex-flow: row wrap;
     align-items: center;
     margin-block-end: 1rem;
+  }
 
-    h1 {
-      margin: 0;
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
+  h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
   }
 
   h2 {

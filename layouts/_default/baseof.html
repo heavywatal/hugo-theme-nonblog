@@ -22,12 +22,12 @@
 {{ partialCached "google_analytics.html" . -}}
 </head>
 <body>
-<header><h1><a href="{{ "/" | relURL }}">
+<header><a href="{{ "/" | relURL }}">
 {{ with .Site.Params.logo_src -}}
 <img class="logo" src="{{ . | relURL }}" alt="{{ $.Site.Params.logo_alt }}">
 {{ end -}}
 {{ .Site.Title }}
-</a></h1>
+</a>
 </header>
 <main>{{ block "main" . -}}{{ end -}}
 </main>
