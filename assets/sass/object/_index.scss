@@ -1,6 +1,7 @@
 @forward "box";
 @forward "toc";
-@forward "bubble";
+@forward "common/alert";
+@forward "common/bubble";
 
 .tags {
   margin-inline-start: auto;
