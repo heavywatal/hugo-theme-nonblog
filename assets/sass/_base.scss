@@ -1,3 +1,5 @@
+@use "common/element";
+
 :root {
   color-scheme: light dark;
   --canvas: #fff;
@@ -161,24 +163,6 @@ thead {
 th,
 td {
   padding: 2px 4px;
-}
-
-blockquote {
-  margin: 8px 0;
-  padding-block: 4px 1px;
-  padding-inline: 24px 0;
-  border-left: solid 2px #8888;
-  position: relative;
-
-  &::before {
-    content: "“";
-    position: absolute;
-    top: -10px;
-    left: 8px;
-    font-size: 2.4rem;
-    font-family: var(--serif);
-    color: #888c;
-  }
 }
 
 a svg:hover {
