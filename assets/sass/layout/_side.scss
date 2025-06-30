@@ -1,3 +1,5 @@
+@use "../common/color";
+
 .menu {
   background-color: var(--canvas);
   padding: 0;
@@ -14,6 +16,7 @@
   a {
     padding: 5px 13px;
     color: inherit;
+    text-decoration: none;
     display: block;
   }
 
@@ -42,7 +45,7 @@
     }
 
     &.active::after {
-      color: var(--color-link);
+      color: var(--link-text);
     }
   }
 
@@ -74,8 +77,8 @@
 
   .active {
     font-weight: bold;
-    color: var(--color-link);
-    border-color: var(--color-link);
+    color: var(--link-text);
+    border-color: var(--link-text);
   }
 
   div:hover,

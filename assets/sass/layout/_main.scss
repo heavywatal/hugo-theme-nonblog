@@ -1,3 +1,5 @@
+@use "../common/color";
+
 body {
   display: flex;
   flex-flow: row wrap;
@@ -13,8 +15,9 @@ body {
 }
 
 header {
-  a {
+  a:any-link {
     color: inherit;
+    text-decoration: none;
   }
 
   .logo {
@@ -127,9 +130,5 @@ article {
       color: #8888;
       content: "#\A#\A#\A#";
     }
-  }
-
-  a:hover {
-    text-decoration: underline;
   }
 }
