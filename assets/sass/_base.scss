@@ -21,43 +21,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-ul,
-ol {
-  padding-inline-start: 1.7rem;
-}
-
-li {
-  margin-block: 0.2em;
-
-  p {
-    margin-block: 0.5em;
-  }
-}
-
-dl {
-  dt {
-    font-weight: bold;
-    margin-block-start: 1em;
-  }
-
-  dd {
-    margin-block: 0.3em;
-    margin-inline: 1em 0;
-    position: relative;
-
-    p {
-      margin-block: 0.3em;
-    }
-
-    &::before {
-      content: ":";
-      opacity: 0.25;
-      position: absolute;
-      left: -0.8em;
-    }
-  }
-}
-
 table {
   box-shadow: 0 0 8px #8886;
   border-spacing: 4px;
