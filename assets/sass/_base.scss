@@ -14,27 +14,3 @@
     --link-text: hsl(#{$link-hue} 100% #{$text-lightness});
   }
 }
-
-html {
-  overflow-y: scroll;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-table {
-  box-shadow: 0 0 8px #8886;
-  border-spacing: 4px;
-}
-
-thead {
-  background: #8883;
-}
-
-th,
-td {
-  padding: 2px 4px;
-}
-
-a svg:hover {
-  transform: scale(1.3);
-}
