@@ -15,6 +15,7 @@
 {{ with $.Param "author.name" }}<meta name="author" content="{{ . }}">{{ end }}
 {{ partial "ogp.html" . -}}
 {{ partialCached "twittercard.html" . -}}
+{{ partialCached "iconify.html" . -}}
 {{ if .IsPage }}
   {{- partialCached "math.html" . ($.Param "math") }}
   {{- if .Section }}{{ partial "breadcrumblist.html" . }}{{ end }}
