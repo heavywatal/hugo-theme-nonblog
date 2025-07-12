@@ -18,7 +18,7 @@ copyright = "(ɔ) 2008 Watal M. Iwasaki"
 logo_src = "heavywatal.svg"
 logo_alt = "heavywatal.svg"
 theme_color = "#eeeeee"
-og_image = "https://avatars.githubusercontent.com/heavywatal"
+images = ["https://avatars.githubusercontent.com/heavywatal"]
 
 [params.author]
 name = "Watal M. Iwasaki"
@@ -64,7 +64,7 @@ title = "Seaborn"
 subtitle = "statistical data visualization"
 tags = ["python", "stats"]
 description = ""
-og_image = "https://example.com/image.jpg"
+images = ["https://example.com/image.jpg"]
 [menu.main]
   parent = "python"
 +++

@@ -13,8 +13,8 @@
 <link rel="manifest" href="{{ "manifest.json" | relURL }}">
 {{ with .Site.Params.theme_color }}<meta name="theme-color" content="{{ . }}">{{ end }}
 {{ with $.Param "author.name" }}<meta name="author" content="{{ . }}">{{ end }}
-{{ partial "ogp.html" . -}}
-{{ partialCached "twittercard.html" . -}}
+{{ partial "opengraph.html" . -}}
+{{ partialCached "twitter_cards.html" . -}}
 {{ partialCached "iconify.html" . -}}
 {{ if .IsPage }}
   {{- partialCached "math.html" . ($.Param "math") }}
