@@ -1,0 +1,12 @@
+.footnotes {
+  opacity: 0.84;
+  font-size: 0.92em;
+
+  > hr {
+    margin-block: 3em 1.5em;
+  }
+
+  > ol {
+    margin-block: 0;
+  }
+}
