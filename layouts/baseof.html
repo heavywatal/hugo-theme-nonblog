@@ -21,7 +21,7 @@
 <body>
 <header><a href="{{ "/" | relURL }}">
 {{ with .Site.Params.logo_src }}{{ with resources.Get . -}}
-<img class="logo" src="{{ . }}"{{ with $.Site.Params.logo_alt }} alt="{{ . }}"{{ end }}>
+<img class="logo" src="{{ .RelPermalink }}"{{ with $.Site.Params.logo_alt }} alt="{{ . }}"{{ end }}>
 {{ end }}{{ end -}}
 {{ .Site.Title }}
 </a>
