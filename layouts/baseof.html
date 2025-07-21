@@ -20,9 +20,9 @@
 </head>
 <body>
 <header><a href="{{ "/" | relURL }}">
-{{ with .Site.Params.logo_src -}}
-<img class="logo" src="{{ . | relURL }}" alt="{{ $.Site.Params.logo_alt }}">
-{{ end -}}
+{{ with .Site.Params.logo_src }}{{ with resources.Get . -}}
+<img class="logo" src="{{ . }}"{{ with $.Site.Params.logo_alt }} alt="{{ . }}"{{ end }}>
+{{ end }}{{ end -}}
 {{ .Site.Title }}
 </a>
 </header>
