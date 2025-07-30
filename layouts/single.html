@@ -5,7 +5,7 @@
 </a></h1>
 <nav class="tags">
 {{ range .Params.tags -}}
-{{ with path.Join "tags" . | $.Site.GetPage }}<a href="{{ .RelPermalink }}"><div>{{ .Title }}</div></a>{{ end }}
+{{ with path.Join "tags" . | $.Site.GetPage }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
 {{ end -}}
 </nav>
 </header>

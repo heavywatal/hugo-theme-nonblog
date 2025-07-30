@@ -2,7 +2,7 @@ import params from '@params'
 import Fuse from './fuse.min.mjs'
 
 const searchQuery = new URLSearchParams(window.location.search).get('q') || ''
-const searchInput = document.getElementById('search-form').querySelector('input')
+const searchInput = document.querySelector('search form input')
 if (searchInput) searchInput.value = searchQuery
 const fuseOptions = {
   minMatchCharLength: searchQuery.length - 1,
@@ -48,15 +48,15 @@ function toHTML (result) {
       item[match.key] = value
     }
   }
-  tags = tags.map((x, i) => `<div><a href="/tags/${x}">${item.tags[i]}</a></div>`)
+  tags = tags.map((x, i) => `<a href="/tags/${x}">${item.tags[i]}</a>`)
   const tagsHTML = tags.join(' ')
-  return `<div>
+  return `<section>
   <header>
     <h1><a href="${item.href}">${item.type}/${item.title}</a></h1>
-    <nav class="tags">${tagsHTML}</nav>
+    <div class="tags">${tagsHTML}</div>
   </header>
   <p>${item.content}</p>
-</div>`
+</section>`
 }
 
 function mark (str, idx) {
