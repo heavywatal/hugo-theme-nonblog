@@ -6,18 +6,12 @@
 
   &::before {
     content: "Table of Contents";
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 6px;
+    font-weight: 500;
   }
 
   & > ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-  }
-
-  & > ul > li > ul > li > ul {
-    display: none;
   }
 }
