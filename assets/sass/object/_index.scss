@@ -4,24 +4,19 @@
 @forward "common/bubble";
 @forward "common/readmore";
 
-.tags {
+header .tags {
   margin-inline-start: auto;
-
-  ul {
-    margin: 0;
-  }
 }
 
 .tags a,
 .terms dt a {
-  display: inline-block;
   font-size: 0.88rem;
   font-weight: normal;
-  padding: 1px 9px;
-  border-radius: 2em;
+  padding: 0.25em 0.6em;
+  border-radius: 1em;
   color: var(--canvas-text);
   opacity: 0.88;
-  background-color: #9996;
+  background-color: hsl(0deg 0% 66% / 33%);
 
   &:hover {
     opacity: 1;
@@ -29,15 +24,9 @@
   }
 }
 
-.terms {
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin-block: 0;
-    margin-inline: 0 1.4em;
-  }
+.terms dd {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0 1.5em;
 }

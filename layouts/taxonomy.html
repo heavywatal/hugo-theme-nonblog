@@ -6,11 +6,11 @@
 <dl class="terms">
 {{ range $key, $weighted_pages := .Data.Terms -}}
 <dt><a href="{{ $.Data.Plural | relURL }}/{{ $key }}">{{ $key }}</a></dt>
-<dd><ul>
+<dd>
   {{- range $page := $weighted_pages.Pages }}
-  <li><a href="{{ .RelPermalink }}">{{ $page.Title }}</a></li>
+<a href="{{ .RelPermalink }}">{{ $page.Title }}</a>
   {{- end }}
-</ul></dd>
+</dd>
 {{ end -}}
 </dl>
 </article>
