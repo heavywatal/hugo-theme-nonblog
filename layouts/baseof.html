@@ -19,7 +19,7 @@
 {{ partialCached "google_analytics.html" . -}}
 </head>
 <body>
-<header><a href="{{ "/" | relURL }}">
+<header><a href="{{ strings.TrimSuffix "index.html" .Site.Home.RelPermalink }}">
 {{ with .Site.Params.logo_src }}{{ with resources.Get . -}}
 <img class="logo" src="{{ .RelPermalink }}"{{ with $.Site.Params.logo_alt }} alt="{{ . }}"{{ end }}>
 {{ end }}{{ end -}}

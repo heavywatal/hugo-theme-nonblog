@@ -1,11 +1,11 @@
 {{ define "main" }}
 <article>
-<header><h1><a href="{{ .RelPermalink }}">
+<header><h1><a href="{{ strings.TrimSuffix "index.html" .RelPermalink }}">
 {{ .Title }}
 </a></h1></header>
 <dl class="terms">
 {{ range $key, $weighted_pages := .Data.Terms -}}
-<dt><a href="{{ $.Data.Plural | relURL }}/{{ $key }}">{{ $key }}</a></dt>
+<dt><a href="{{ $.Data.Plural | relURL }}/{{ $key }}.html">{{ $key }}</a></dt>
 <dd>
   {{- range $page := $weighted_pages.Pages }}
 <a href="{{ .RelPermalink }}">{{ $page.Title }}</a>
