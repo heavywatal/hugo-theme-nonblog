@@ -19,12 +19,16 @@
 {{ partialCached "google_analytics.html" . -}}
 </head>
 <body>
-<header><a href="{{ strings.TrimSuffix "index.html" .Site.Home.RelPermalink }}">
+<header>
+<a href="{{ strings.TrimSuffix "index.html" .Site.Home.RelPermalink }}">
 {{ with .Site.Params.logo_src }}{{ with resources.Get . -}}
 <img class="logo" src="{{ .RelPermalink }}"{{ with $.Site.Params.logo_alt }} alt="{{ . }}"{{ end }}>
-{{ end }}{{ end -}}
-{{ .Site.Title }}
+{{- end }}{{ end -}}
+<span class="site-title">{{ .Site.Title }}</span>
 </a>
+<search><form action="{{ relref . `search` }}">
+<input type="search" name="q" placeholder="search">
+</form></search>
 </header>
 <main>{{ block "main" . -}}{{ end -}}
 </main>
@@ -45,9 +49,6 @@
   {{- end }}
 {{ end -}}
 </div>
-<search><form action="{{ relref . `search` }}">
-<input type="search" name="q" placeholder="search">
-</form></search>
 </nav>
 <footer><small>{{ .Site.Copyright }}</small></footer>
 </body>

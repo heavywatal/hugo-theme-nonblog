@@ -88,20 +88,3 @@
     transform: scale(1.01);
   }
 }
-
-search > form {
-  margin-block: 1rem 0;
-
-  input {
-    font-size: 0.88rem;
-    padding: 4px 6px;
-    width: 100%;
-    border: none;
-    background-color: var(--canvas);
-    color: var(--canvas-text);
-
-    &::placeholder {
-      opacity: 0.75;
-    }
-  }
-}

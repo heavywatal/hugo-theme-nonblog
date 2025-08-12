@@ -19,18 +19,45 @@ header {
     color: inherit;
     text-decoration: none;
   }
-
-  .logo {
-    height: 32px;
-    vertical-align: text-bottom;
-    margin-right: 4px;
-  }
 }
 
 body > header {
   width: 100%;
-  font-size: 1.2rem;
-  padding: 10px 6px;
+  margin-block: 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    height: 32px;
+    vertical-align: text-bottom;
+    margin-inline: 6px;
+  }
+
+  .site-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    flex-basis: max-content;
+  }
+
+  search {
+    margin-inline-start: auto;
+  }
+}
+
+search input {
+  font-size: 0.88rem;
+  width: 12rem;
+  padding-inline: 0.4rem;
+  line-height: inherit;
+  border: none;
+  background-color: var(--canvas);
+  color: var(--canvas-text);
+
+  &::placeholder {
+    opacity: 0.75;
+  }
 }
 
 footer {
@@ -42,7 +69,7 @@ footer {
 
 main,
 .menu,
-search > form {
+search input {
   box-shadow: 2px 2px 12px #0003;
 }
 
