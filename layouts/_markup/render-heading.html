@@ -1,0 +1,3 @@
+<h{{ .Level }} id="{{ .Anchor }}"{{ with .Attributes.class }} class="{{ . }}"{{ end }}>
+{{ .Text }}<a {{ printf "href=\"#%s\"" .Anchor | safe.HTMLAttr }}></a>
+</h{{ .Level }}>

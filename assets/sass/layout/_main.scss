@@ -98,21 +98,39 @@ article {
     font-weight: bold;
   }
 
+  :is(h2, h3, h4, h5, h6) {
+    font-weight: normal;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 0;
+      white-space: pre;
+      color: hsl(0deg 0% 55% / 55%);
+    }
+    & > a[href^="#"] {
+      user-select: none;
+      position: absolute;
+      top: 0;
+      left: -1.2rem;
+      height: 100%;
+      width: 1rem;
+      background-color: var(--canvas);
+      opacity: 0.25;
+      &:hover {
+        opacity: 0;
+      }
+    }
+  }
+
   h2 {
     font-size: 1.4rem;
     background: linear-gradient(to right, #9994, #9990);
     margin-block: 1.2em 0.8em;
     padding: 0.4rem 0.7rem;
-    font-weight: normal;
-    position: relative;
     &::before {
-      position: absolute;
-      top: 0.2rem;
       left: -1.1rem;
-      line-height: 1.1em;
+      line-height: 1.25;
       font-size: 1.2rem;
-      white-space: pre;
-      color: #8888;
       content: "#\A#";
     }
   }
@@ -126,16 +144,10 @@ article {
     background: linear-gradient(to right, #9993, #9990 80%);
     margin-block: 1.2em 0.8em;
     padding: 0.3rem 0.7rem;
-    font-weight: normal;
-    position: relative;
     &::before {
-      position: absolute;
-      top: 0;
       left: -1rem;
-      line-height: 0.9em;
+      line-height: 0.9;
       font-size: 0.9rem;
-      white-space: pre;
-      color: #8888;
       content: "#\A#\A#";
     }
   }
@@ -145,17 +157,34 @@ article {
     background: linear-gradient(to right, #9993, #9990 60%);
     margin-block: 1.2em 0.8em;
     padding: 0.2rem 0.6rem;
-    font-weight: normal;
-    position: relative;
     &::before {
-      position: absolute;
-      top: 0;
       left: -0.9rem;
-      line-height: 0.82em;
+      line-height: 0.82;
       font-size: 0.6rem;
-      white-space: pre;
-      color: #8888;
       content: "#\A#\A#\A#";
+    }
+  }
+
+  h5 {
+    font-size: 1.05rem;
+    margin-block: 1.2em 0.8em;
+    &::before {
+      left: -1.1rem;
+      line-height: 0.8;
+      font-size: 0.6rem;
+      text-align: center;
+      content: "##\A#\A##";
+    }
+  }
+
+  h6 {
+    font-size: 1.05rem;
+    margin-block: 1.2em 0.8em;
+    &::before {
+      left: -1.1rem;
+      line-height: 0.8;
+      font-size: 0.6rem;
+      content: "##\A##\A##";
     }
   }
 }
