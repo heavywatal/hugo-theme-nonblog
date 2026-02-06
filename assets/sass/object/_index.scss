@@ -16,7 +16,7 @@ header .tags {
   border-radius: 1em;
   color: var(--canvas-text);
   opacity: 0.88;
-  background-color: hsl(0deg 0% 66% / 33%);
+  background-color: oklch(73% 0 0deg / 0.33);
 
   &:hover {
     opacity: 1;

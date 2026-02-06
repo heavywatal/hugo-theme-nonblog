@@ -7,10 +7,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    $link-hue: 220deg;
-    $text-lightness: 75%;
     --canvas: #000;
-    --canvas-text: hsl(#{$link-hue} 0% #{$text-lightness});
-    --link-text: hsl(#{$link-hue} 100% #{$text-lightness});
+    --link-text: oklch(80% 0.16 256deg);
   }
 }

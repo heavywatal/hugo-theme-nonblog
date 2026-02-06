@@ -40,7 +40,7 @@
       content: "❯";
       position: absolute;
       right: 8px;
-      color: #8886;
+      color: oklch(60% 0 0deg / 0.4);
       transition: all 0.2s ease-out;
     }
 
@@ -64,7 +64,7 @@
   }
 
   li {
-    background: #cccccc20;
+    background: oklch(85% 0 0deg / 0.125);
     margin: 0;
   }
 
@@ -72,7 +72,7 @@
   label,
   li,
   label.active {
-    border-bottom: 1px solid #8886;
+    border-bottom: 1px solid oklch(63% 0 0deg / 0.4);
   }
 
   .active {
