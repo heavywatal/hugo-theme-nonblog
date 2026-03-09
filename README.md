@@ -42,17 +42,14 @@ ID = "G-***"
 [[module.imports]]
 path = "github.com/heavywatal/hugo-theme-nonblog"
 
+[menu]
+[[menu.main]]
+name = "Tags"
+url = "/tags/"
+weight = 100
+
 [taxonomies]
 tag = "tags"
-
-[[menu.main]]
-    name = "R"
-    identifier = "rstats"
-    weight = 10
-[[menu.main]]
-    name = "Python"
-    identifier = "python"
-    weight = 20
 +++
 ```
 
@@ -65,7 +62,5 @@ subtitle = "statistical data visualization"
 tags = ["python", "stats"]
 description = ""
 images = ["https://example.com/image.jpg"]
-[menu.main]
-  parent = "python"
 +++
 ```
