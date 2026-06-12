@@ -95,11 +95,11 @@ article {
   h1 {
     margin: 0;
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 600;
   }
 
   :is(h2, h3, h4, h5, h6) {
-    font-weight: normal;
+    font-weight: 500;
     position: relative;
     &::before {
       position: absolute;
