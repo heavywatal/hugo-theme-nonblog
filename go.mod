@@ -4,4 +4,4 @@ go 1.22
 
 toolchain go1.23.2
 
-require github.com/heavywatal/hugo-mod-common v0.0.0-20260612070612-01f65fbf2ce6 // indirect
+require github.com/heavywatal/hugo-mod-common v0.0.0-20261022120914-3f3256675d8b // indirect
