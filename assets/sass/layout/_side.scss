@@ -68,10 +68,7 @@
     margin: 0;
   }
 
-  div,
-  label,
-  li,
-  label.active {
+  :is(div, label, li, label.active) {
     border-bottom: 1px solid oklch(63% 0 0deg / 0.4);
   }
 
@@ -81,9 +78,7 @@
     border-color: var(--link-text);
   }
 
-  div:hover,
-  label:hover,
-  li:hover {
+  :is(div, label, li):hover {
     filter: brightness(1.1);
     transform: scale(1.01);
   }
